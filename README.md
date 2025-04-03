@@ -28,8 +28,15 @@ This document is broken into distinct sections detailing each data source.
     4. [Player Statistics](#player-statistics)
     5. [Player Profile](#player-profile)
 3. [Media Access](#media-access)
-4. [API Information](#league-information)
     1. [Standings](#standings)
+    2. [Daily Report](#daily-report)
+    3. [Team Reports](#team-reports)
+        1. [Season Schedule](#season-schedule)
+        2. [Player Game by Game](#player-game-by-game)
+        3. [Roster](#roster)
+    4. [] 
+4. [API Information](#league-information)
+    1. [Standings](#standings-1)
         1. [Get League Standings](#get-league-standings)
         2. [Get Team Standings by Division](#get-team-standings-by-division)
     2. [Players](#players)
@@ -193,9 +200,7 @@ https://lscluster.hockeytech.com/statview/mobile/pwhl/player/32/5
 https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=0
 ```
 
-### Media Kits
-
-#### Daily Report
+### Daily Report
 
 - **Endpoint**: `download.php`
 - **Description**: View the daily report for the league.
