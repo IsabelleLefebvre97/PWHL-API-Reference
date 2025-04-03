@@ -126,7 +126,7 @@ key=446521baf8c38984&client_code=pwhl
 - **Response**: JSON format
 - **Output**: [seasons.json](./data/seasons.json)
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=seasons&key=446521baf8c38984&client_code=pwhl"
@@ -145,7 +145,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
     - `season_id` = `5` (or specific season ID)
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/?feed=modulekit&view=schedule&season_id=5&key=446521baf8c38984&client_code=pwhl"
@@ -164,7 +164,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/?feed=modulekit&view=schedule
     - `month` = `-1` (to include all months)
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=schedule&team=3&season=5&month=-1&key=446521baf8c38984&client_code=pwhl"
@@ -182,7 +182,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
     - `numberofdaysahead` = `1000`
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=scorebar&numberofdaysback=1000&numberofdaysahead=1000&key=446521baf8c38984&client_code=pwhl"
@@ -201,7 +201,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
     - `season_id` = `5` (or specific season ID)
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=teamsbyseason&season_id=5&key=446521baf8c38984&client_code=pwhl"
@@ -219,7 +219,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
     - `season_id` = `5` (or specific season ID)
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=roster&team_id=3&season_id=5&key=446521baf8c38984&client_code=pwhl"
@@ -243,7 +243,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
     - `lang` = `en`
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=teams&groupTeamsBy=division&context=overall&site_id=0&season=5&special=false&key=446521baf8c38984&client_code=pwhl&league_id=1&conference=-1&division=-1&sort=points&lang=en"
@@ -266,7 +266,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
     - `lang` = `en`
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=teams&groupTeamsBy=division&season=5&special=true&key=446521baf8c38984&client_code=pwhl"
@@ -295,7 +295,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
     - `lang` = `en`
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=players&season=5&team=all&position=skaters&rookies=0&statsType=standard&rosterstatus=undefined&site_id=0&league_id=1&lang=en&division=-1&conference=-1&key=446521baf8c38984&client_code=pwhl&league_id=1&limit=500&sort=points&league_id=1&lang=en&division=-1&conference=-1"
@@ -315,7 +315,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
     - `season_id` = `5` (or specific season ID)
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=statviewtype&type=skaters&league_id=1&team_id=3&season_id=5&key=446521baf8c38984&client_code=pwhl"
@@ -343,7 +343,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
     - `lang` = `en`
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=players&season=5&team=all&position=goalies&rookies=0&statsType=standard&rosterstatus=undefined&site_id=0&first=0&limit=500&sort=gaa&league_id=1&lang=en&division=-1&conference=-1&qualified=all&key=446521baf8c38984&client_code=pwhl&league_id=1"
@@ -363,7 +363,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
     - `season_id` = `5` (or specific season ID)
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=statviewtype&type=goalies&league_id=1&team_id=3&season_id=5&key=446521baf8c38984&client_code=pwhl"
@@ -382,7 +382,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
     - `player_id` = `32` (or specific player ID)
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=player&player_id=32&key=446521baf8c38984&client_code=pwhl"
@@ -401,7 +401,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
     - `player_id` = `32` (or specific player ID)
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=player&category=gamebygame&season_id=5&player_id=32&key=446521baf8c38984&client_code=pwhl"
@@ -419,7 +419,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
     - `player_id` = `32` (or specific player ID)
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=player&category=seasonstats&player_id=32&key=446521baf8c38984&client_code=pwhl"
@@ -437,7 +437,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
     - `player_id` = `32` (or specific player ID)
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=player&category=mostrecentseasonstats&player_id=32&key=446521baf8c38984&client_code=pwhl"
@@ -461,7 +461,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
     - `lang` = `en`
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=leadersExtended&key=446521baf8c38984&season_id=5&division=&conference=&team_id=0&site_id=0&client_code=pwhl&playerTypes=skaters&skaterStatTypes=points,goals,plus_minus&activeOnly=0&lang=en"
@@ -483,7 +483,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
     - `lang` = `en`
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=leadersExtended&key=446521baf8c38984&season_id=5&division=&conference=&team_id=0&site_id=0&client_code=pwhl&playerTypes=goalies&goalieStatTypes=save_percentage,wins,goals_against_average,shutouts&activeOnly=0&lang=en"
@@ -504,7 +504,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
     - `lang` = `en`
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=gamesummary&game_id=137&key=446521baf8c38984&client_code=pwhl"
@@ -521,7 +521,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=gamesum
     - `game_id` = `137` (or specific game ID)
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=clock&game_id=137&key=446521baf8c38984&client_code=pwhl"
@@ -538,7 +538,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=clock&g
     - `game_id` = `137` (or specific game ID)
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=pxp&game_id=137&key=446521baf8c38984&client_code=pwhl"
@@ -555,7 +555,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=pxp&gam
     - `game_id` = `137` (or specific game ID)
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=pxpverbose&game_id=137&key=446521baf8c38984&client_code=pwhl"
@@ -572,7 +572,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=pxpverb
     - `game_id` = `137` (or specific game ID)
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=preview&game_id=137&key=446521baf8c38984&client_code=pwhl"
@@ -589,7 +589,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=preview
     - `season_id` = `3` (or specific playoff season ID)
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=brackets&season_id=3&key=446521baf8c38984&client_code=pwhl"
@@ -611,7 +611,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
     - `lang` = `en`
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=bootstrap&season=latest&pageName=scorebar&key=446521baf8c38984&client_code=pwhl&site_id=0&league_id=&league_code=&conference=-1&division=-1&lang=en"
@@ -631,7 +631,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
     - `lang` = `en`
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=bootstrap&season=null&pageName=game-summary&key=446521baf8c38984&client_code=pwhl&site_id=0&league_id=&league_code=&conference=-1&division=-1&lang=en"
@@ -664,7 +664,7 @@ The Firebase API endpoints typically require authentication parameters:
 - **Description**: Retrieve all available real-time data for current PWHL games.
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl.json?auth=uwM69pPkdUhb0UuVAxM8IcA6pBAzATAxOc8979oJ&key=AIzaSyBVn0Gr6zIFtba-hQy3StkifD8bb7Hi68A"
@@ -679,7 +679,7 @@ curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl.json?auth=uwM69pPk
 - **Description**: Retrieve the current running clock data for active games.
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/runningclock.json?auth=uwM69pPkdUhb0UuVAxM8IcA6pBAzATAxOc8979oJ"
@@ -692,7 +692,7 @@ curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/runningclock.json?
 - **Description**: Retrieve the published clock data for active games.
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/publishedclock.json?auth=uwM69pPkdUhb0UuVAxM8IcA6pBAzATAxOc8979oJ"
@@ -707,7 +707,7 @@ curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/publishedclock.jso
 - **Description**: Retrieve faceoff data from active games.
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/faceoffs.json?auth=uwM69pPkdUhb0UuVAxM8IcA6pBAzATAxOc8979oJ"
@@ -720,7 +720,7 @@ curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/faceoffs.json?auth
 - **Description**: Retrieve goal data from active games.
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/goals.json?auth=uwM69pPkdUhb0UuVAxM8IcA6pBAzATAxOc8979oJ"
@@ -733,7 +733,7 @@ curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/goals.json?auth=uw
 - **Description**: Retrieve penalty data from active games.
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/penalties.json?auth=uwM69pPkdUhb0UuVAxM8IcA6pBAzATAxOc8979oJ"
@@ -746,7 +746,7 @@ curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/penalties.json?aut
 - **Description**: Retrieve shot summary data from active games.
 - **Response**: JSON format
 
-###### Example using cURL:
+**Example using cURL:**
 
 ```bash
 curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/shotssummary.json?auth=uwM69pPkdUhb0UuVAxM8IcA6pBAzATAxOc8979oJ"
@@ -777,7 +777,7 @@ https://lscluster.hockeytech.com/
 - **Endpoint**: `statview/mobile/pwhl/schedule`
 - **Description**: View a list of games by calendar month.
 
-###### Full URL:
+**Full URL:**
 
 ```
 https://lscluster.hockeytech.com/statview/mobile/pwhl/schedule
@@ -788,7 +788,7 @@ https://lscluster.hockeytech.com/statview/mobile/pwhl/schedule
 - **Endpoint**: `statview/mobile/pwhl/daily-schedule`
 - **Description**: View a list of games by day.
 
-###### Full URL:
+**Full URL:**
 
 ```
 https://lscluster.hockeytech.com/statview/mobile/pwhl/daily-schedule
@@ -802,7 +802,7 @@ https://lscluster.hockeytech.com/statview/mobile/pwhl/daily-schedule
     - `client_code` = `pwhl`
     - `season_id` = `5` (or specific season ID)
 
-###### Full URL:
+**Full URL:**
 
 ```
 https://lscluster.hockeytech.com/components/calendar/ical_add_games.php?client_code=pwhl&season_id=5
@@ -813,7 +813,7 @@ https://lscluster.hockeytech.com/components/calendar/ical_add_games.php?client_c
 - **Endpoint**: `statview/mobile/pwhl/game-center`
 - **Description**: View the game summary for a given game.
 
-###### Full URL:
+**Full URL:**
 
 ```
 https://lscluster.hockeytech.com/statview/mobile/pwhl/game-center/137
@@ -824,7 +824,7 @@ https://lscluster.hockeytech.com/statview/mobile/pwhl/game-center/137
 - **Endpoint**: `statview/mobile/pwhl/roster`
 - **Description**: View team rosters.
 
-###### Full URL:
+**Full URL:**
 
 The example below shows the roster for team 3 (MTL) for season 5 (2024-2025 Regular Season).
 
@@ -837,7 +837,7 @@ https://lscluster.hockeytech.com/statview/mobile/pwhl/roster/3/5
 - **Endpoint**: `statview/mobile/pwhl/player-stats`
 - **Description**: View a player statistics table.
 
-###### Full URL:
+**Full URL:**
 
 ```
 https://lscluster.hockeytech.com/statview/mobile/pwhl/player-stats
@@ -848,7 +848,7 @@ https://lscluster.hockeytech.com/statview/mobile/pwhl/player-stats
 - **Endpoint**: `statview/mobile/pwhl/player`
 - **Description**: View a given player's profile.
 
-###### Full URL:
+**Full URL:**
 
 The example below shows the profile for player 32 (Laura Stacey) for season 5 (2024-2025 Regular Season).
 
@@ -868,7 +868,7 @@ https://lscluster.hockeytech.com/statview/mobile/pwhl/player/32/5
     - `season_id` = `5` (or specific season ID)
     - `order` = `overall`
 
-###### Full URL:
+**Full URL:**
 
 ```
 https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=0
@@ -882,7 +882,7 @@ https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=0
     - `client_code` = `pwhl`
     - `file_path` = `daily-report`
 
-###### Full URLs:
+**Full URLs:**
 
 ```
 https://lscluster.hockeytech.com/download.php?client_code=pwhl&file_path=daily-report/daily-report.html
@@ -905,7 +905,7 @@ https://lscluster.hockeytech.com/download.php?client_code=pwhl&file_path=daily-r
     - `season_id` = `5` (or specific season ID)
     - `team` = `3` (or specific team ID)
 
-###### Full URL:
+**Full URL:**
 
 ```
 https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=9&format=HTML&season_id=5&team=3
@@ -922,7 +922,7 @@ https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=9&format=H
     - `season_id` = `5` (or specific season ID)
     - `team` = `3` (or specific team ID)
 
-###### Full URL:
+**Full URL:**
 
 ```
 https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=11&format=HTML&season_id=5&team=3
@@ -939,7 +939,7 @@ https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=11&format=
     - `season_id` = `5` (or specific season ID)
     - `team` = `3` (or specific team ID)
 
-###### Full URL:
+**Full URL:**
 
 ```
 https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=4&format=HTML&season_id=5&team=3
@@ -959,7 +959,7 @@ https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=4&format=H
     - `team` = `3` (or specific team ID)
     - `second_team` = `5` (or specific team ID)
 
-###### Full URL:
+**Full URL:**
 
 ```
 https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?season_id=5&step=4&sub=13
@@ -975,7 +975,7 @@ https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?season_id=5&step=4&su
     - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
     - `season_id` = `5` (or specific season ID)
 
-###### Full URL:
+**Full URL:**
 
 ```
 https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=1
@@ -991,7 +991,7 @@ https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id
     - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
     - `season_id` = `5` (or specific season ID)
 
-###### Full URL:
+**Full URL:**
 
 ```
 https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=10
@@ -1007,7 +1007,7 @@ https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id
     - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
     - `season_id` = `5` (or specific season ID)
 
-###### Full URL:
+**Full URL:**
 
 ```
 https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=12
@@ -1023,7 +1023,7 @@ https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id
     - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
     - `season_id` = `5` (or specific season ID)
 
-###### Full URL:
+**Full URL:**
 
 ```
 https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=15
@@ -1039,7 +1039,7 @@ https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id
     - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
     - `season_id` = `5` (or specific season ID)
 
-###### Full URL:
+**Full URL:**
 
 ```
 https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=16
