@@ -58,7 +58,8 @@ This document is broken into distinct sections detailing each data source.
 
 ### [Formatted Data](#formatted-data)
 
-1. [Mobile Site](#mobile-site)
+1. [Base URL](#hockeytech-base-url-1)
+2. [Mobile Site](#mobile-site)
     1. [League Schedule](#league-schedule)
         1. [Monthly Schedule](#monthly-schedule)
         2. [Daily Schedule](#daily-schedule)
