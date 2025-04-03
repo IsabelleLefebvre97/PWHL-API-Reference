@@ -15,31 +15,7 @@ This document is broken into distinct sections detailing each data source.
 
 ## Table of Contents
 
-### [Formatted Data](#formatted-data)
-
-1. [League Schedule](#league-schedule)
-    1. [Monthly Schedule](#monthly-schedule)
-    2. [Daily Schedule](#daily-schedule)
-    3. [Calendar Feed](#calendar-feed)
-2. [Game Summaries](#game-summaries)
-3. [Team Rosters](#team-rosters)
-4. [Player Statistics](#player-statistics)
-5. [Player Profile](#player-profile)
-6. [Media Access](#media-access)
-    1. [Standings](#standings)
-    2. [Daily Report](#daily-report)
-    3. [Team Reports](#team-reports)
-        1. [Season Schedule](#season-schedule)
-        2. [Player Game by Game](#player-game-by-game)
-        3. [Roster](#roster)
-    4. [Special Reports](#special-reports)
-        1. [Team Head to Head](#team-head-to-head)
-        2. [Player Stats By Team](#player-stats-by-team)
-        3. [Overall Team Records](#overall-team-records)
-        4. [Team Game Highs and Lows](#team-game-highs-and-lows)
-        5. [Attendance Report](#attendance-report)
-
-### [HockeyTech/LeagueStat Data](#hockeytech-api-documentation)
+### [HockeyTech/LeagueStat API](#hockeytech-api-documentation)
 
 1. [Base URL](#hockeytech-base-url)
 
@@ -81,6 +57,31 @@ This document is broken into distinct sections detailing each data source.
         3. [Penalties](#get-penalties)
         4. [Shot Summary](#get-shot-summary)
 
+### [Formatted Data](#formatted-data)
+
+1. [Mobile Site](#mobile-site)
+    1. [League Schedule](#league-schedule)
+        1. [Monthly Schedule](#monthly-schedule)
+        2. [Daily Schedule](#daily-schedule)
+        3. [Calendar Feed](#calendar-feed)
+    2. [Game Summaries](#game-summaries)
+    3. [Team Rosters](#team-rosters)
+    4. [Player Statistics](#player-statistics)
+    5. [Player Profile](#player-profile)
+6. [Media Access](#media-access)
+    1. [Standings](#standings)
+    2. [Daily Report](#daily-report)
+    3. [Team Reports](#team-reports)
+        1. [Season Schedule](#season-schedule)
+        2. [Player Game by Game](#player-game-by-game)
+        3. [Roster](#roster)
+    4. [Special Reports](#special-reports)
+        1. [Team Head to Head](#team-head-to-head)
+        2. [Player Stats By Team](#player-stats-by-team)
+        3. [Overall Team Records](#overall-team-records)
+        4. [Team Game Highs and Lows](#team-game-highs-and-lows)
+        5. [Attendance Report](#attendance-report)
+
 ---
 
 # HockeyTech API Documentation
@@ -100,283 +101,6 @@ Most HockeyTech API endpoints require the following parameters:
 
 ```
 key=446521baf8c38984&client_code=pwhl
-```
-
-## Formatted Data
-
-### League Schedule
-
-#### Monthly Schedule
-
-- **Endpoint**: `statview/mobile/pwhl/schedule`
-- **Description**: View a calendar of games for the current month.
-
-###### Full URL:
-
-```
-https://lscluster.hockeytech.com/statview/mobile/pwhl/schedule
-```
-
-#### Daily Schedule
-
-- **Endpoint**: `statview/mobile/pwhl/daily-schedule`
-- **Description**: View a list of games by date.
-
-###### Full URL:
-
-```
-https://lscluster.hockeytech.com/statview/mobile/pwhl/daily-schedule
-```
-
-#### Calendar Feed
-
-- **Endpoint**: `components/calendar/ical_add_games.php`
-- **Description**: Download the game calendar for a given season.
-- **Parameters**:
-    - `client_code` = `pwhl`
-    - `season` = `5` (or specific season ID)
-
-###### Full URL:
-
-```
-https://lscluster.hockeytech.com/components/calendar/ical_add_games.php?client_code=pwhl&season_id=5
-```
-
-### Game Summaries
-
-- **Endpoint**: `statview/mobile/pwhl/game-center`
-- **Description**: View the game summary for a given game.
-
-###### Full URL:
-
-```
-https://lscluster.hockeytech.com/statview/mobile/pwhl/game-center/137
-```
-
-### Team Rosters
-
-- **Endpoint**: `statview/mobile/pwhl/roster`
-- **Description**: Retrieve a table of player statistics.
-
-###### Full URL:
-
-The example below shows the roster for team 3 (MTL) for season 5 (2024-2025 Regular Season).
-
-```
-https://lscluster.hockeytech.com/statview/mobile/pwhl/roster/3/5
-```
-
-### Player Statistics
-
-- **Endpoint**: `statview/mobile/pwhl/player-stats`
-- **Description**: Retrieve a table of player statistics.
-
-###### Full URL:
-
-```
-https://lscluster.hockeytech.com/statview/mobile/pwhl/player-stats
-```
-
-### Player Profile
-
-- **Endpoint**: `statview/mobile/pwhl/player`
-- **Description**: Retrieve a table of player statistics.
-
-###### Full URL:
-
-The example below shows the profile for player 32 (Laura Stacey) for season 5 (2024-2025 Regular Season).
-
-```
-https://lscluster.hockeytech.com/statview/mobile/pwhl/player/32/5
-```
-
-## Media Access
-
-### Standings
-
-- **Endpoint**: `media/pwhl/pwhl/index.php`
-- **Description**: Retrieve team standings for the league.
-- **Parameters**:
-    - `step` = `4`
-    - `sub` = `0`
-    - `season_id` = `5` (or specific season ID)
-    - `order` = `overall`
-
-###### Full URL:
-
-```
-https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=0
-```
-
-### Daily Report
-
-- **Endpoint**: `download.php`
-- **Description**: View the daily report for the league.
-- **Parameters**:
-    - `client_code` = `pwhl`
-    - `file_path` = `daily-report`
-
-###### Full URLs:
-
-```
-https://lscluster.hockeytech.com/download.php?client_code=pwhl&file_path=daily-report/daily-report.html
-```
-
-```
-https://lscluster.hockeytech.com/download.php?client_code=pwhl&file_path=daily-report/daily-report.pdf
-```
-
-### Team Reports
-
-#### Season Schedule
-
-- **Endpoint**: `media/pwhl/pwhl/index.php`
-- **Description**: Retrieve the season schedule for a given team.
-- **Parameters**:
-    - `step` = `4`
-    - `sub` = `9`
-    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
-    - `season_id` = `5` (or specific season ID)
-    - `team` = `3` (or specific team ID)
-
-###### Full URL:
-
-```
-https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=9&format=HTML&season_id=5&team=3
-```
-
-#### Player Game by Game
-
-- **Endpoint**: `media/pwhl/pwhl/index.php`
-- **Description**: Retrieve player game-by-game report for a given team.
-- **Parameters**:
-    - `step` = `4`
-    - `sub` = `11`
-    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
-    - `season_id` = `5` (or specific season ID)
-    - `team` = `3` (or specific team ID)
-
-###### Full URL:
-
-```
-https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=11&format=HTML&season_id=5&team=3
-```
-
-#### Roster
-
-- **Endpoint**: `media/pwhl/pwhl/index.php`
-- **Description**: Retrieve the roster for a given team.
-- **Parameters**:
-    - `step` = `4`
-    - `sub` = `4`
-    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
-    - `season_id` = `5` (or specific season ID)
-    - `team` = `3` (or specific team ID)
-
-###### Full URL:
-
-```
-https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=4&format=HTML&season_id=5&team=3
-```
-
-## Special Reports
-
-#### Team Head to Head
-
-- **Endpoint**: `media/pwhl/pwhl/index.php`
-- **Description**: Retrieve the head-to-head records for two teams for a given season.
-- **Parameters**:
-    - `step` = `4`
-    - `sub` = `13`
-    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
-    - `season_id` = `5` (or specific season ID)
-    - `team` = `3` (or specific team ID)
-    - `second_team` = `5` (or specific team ID)
-
-###### Full URL:
-
-```
-https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?season_id=5&step=4&sub=13
-```
-
-#### Player Stats By Team
-
-- **Endpoint**: `media/pwhl/pwhl/index.php`
-- **Description**: Retrieve player stats by team for a given season.
-- **Parameters**:
-    - `step` = `4`
-    - `sub` = `1`
-    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
-    - `season_id` = `5` (or specific season ID)
-
-###### Full URL:
-
-```
-https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=1
-```
-
-#### Overall Team Records
-
-- **Endpoint**: `media/pwhl/pwhl/index.php`
-- **Description**: Retrieve detailed team records for a given season.
-- **Parameters**:
-    - `step` = `4`
-    - `sub` = `10`
-    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
-    - `season_id` = `5` (or specific season ID)
-
-###### Full URL:
-
-```
-https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=10
-```
-
-#### Team Game Highs and Lows
-
-- **Endpoint**: `media/pwhl/pwhl/index.php`
-- **Description**: Show game records for a given season (i.e., most goals, most saves, etc.).
-- **Parameters**:
-    - `step` = `4`
-    - `sub` = `12`
-    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
-    - `season_id` = `5` (or specific season ID)
-
-###### Full URL:
-
-```
-https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=12
-```
-
-#### Attendance Report
-
-- **Endpoint**: `media/pwhl/pwhl/index.php`
-- **Description**: Show the attendance report for a given season.
-- **Parameters**:
-    - `step` = `4`
-    - `sub` = `15`
-    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
-    - `season_id` = `5` (or specific season ID)
-
-###### Full URL:
-
-```
-https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=15
-```
-
-#### Hat Tricks and Shutouts
-
-- **Endpoint**: `media/pwhl/pwhl/index.php`
-- **Description**: Show hat trick and shutout records for a given season.
-- **Parameters**:
-    - `step` = `4`
-    - `sub` = `16`
-    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
-    - `season_id` = `5` (or specific season ID)
-
-###### Full URL:
-
-```
-https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=16
 ```
 
 ## League Information
@@ -845,4 +569,295 @@ curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/penalties.json?aut
 
 ```bash
 curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/shotssummary.json?auth=uwM69pPkdUhb0UuVAxM8IcA6pBAzATAxOc8979oJ"
+```
+
+# Formatted Data Documentation
+
+This section provides references for the publically-available formatted data, such as game calendars, standings tables,
+and player statistics.
+
+## HockeyTech Base URL
+
+Since formatted data seems to be provided entirely by HockeyTech/LeagueStat, all endpoints described in this section are
+relative to the following base URL:
+
+```
+https://lscluster.hockeytech.com/
+```
+
+## Mobile Site
+
+### League Schedule
+
+#### Monthly Schedule
+
+- **Endpoint**: `statview/mobile/pwhl/schedule`
+- **Description**: View a calendar of games for the current month.
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/statview/mobile/pwhl/schedule
+```
+
+#### Daily Schedule
+
+- **Endpoint**: `statview/mobile/pwhl/daily-schedule`
+- **Description**: View a list of games by date.
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/statview/mobile/pwhl/daily-schedule
+```
+
+#### Calendar Feed
+
+- **Endpoint**: `components/calendar/ical_add_games.php`
+- **Description**: Download the game calendar for a given season.
+- **Parameters**:
+    - `client_code` = `pwhl`
+    - `season` = `5` (or specific season ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/components/calendar/ical_add_games.php?client_code=pwhl&season_id=5
+```
+
+### Game Summaries
+
+- **Endpoint**: `statview/mobile/pwhl/game-center`
+- **Description**: View the game summary for a given game.
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/statview/mobile/pwhl/game-center/137
+```
+
+### Team Rosters
+
+- **Endpoint**: `statview/mobile/pwhl/roster`
+- **Description**: Retrieve a table of player statistics.
+
+###### Full URL:
+
+The example below shows the roster for team 3 (MTL) for season 5 (2024-2025 Regular Season).
+
+```
+https://lscluster.hockeytech.com/statview/mobile/pwhl/roster/3/5
+```
+
+### Player Statistics
+
+- **Endpoint**: `statview/mobile/pwhl/player-stats`
+- **Description**: Retrieve a table of player statistics.
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/statview/mobile/pwhl/player-stats
+```
+
+### Player Profile
+
+- **Endpoint**: `statview/mobile/pwhl/player`
+- **Description**: Retrieve a table of player statistics.
+
+###### Full URL:
+
+The example below shows the profile for player 32 (Laura Stacey) for season 5 (2024-2025 Regular Season).
+
+```
+https://lscluster.hockeytech.com/statview/mobile/pwhl/player/32/5
+```
+
+## Media Access
+
+### Standings
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Retrieve team standings for the league.
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `0`
+    - `season_id` = `5` (or specific season ID)
+    - `order` = `overall`
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=0
+```
+
+### Daily Report
+
+- **Endpoint**: `download.php`
+- **Description**: View the daily report for the league.
+- **Parameters**:
+    - `client_code` = `pwhl`
+    - `file_path` = `daily-report`
+
+###### Full URLs:
+
+```
+https://lscluster.hockeytech.com/download.php?client_code=pwhl&file_path=daily-report/daily-report.html
+```
+
+```
+https://lscluster.hockeytech.com/download.php?client_code=pwhl&file_path=daily-report/daily-report.pdf
+```
+
+### Team Reports
+
+#### Season Schedule
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Retrieve the season schedule for a given team.
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `9`
+    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
+    - `season_id` = `5` (or specific season ID)
+    - `team` = `3` (or specific team ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=9&format=HTML&season_id=5&team=3
+```
+
+#### Player Game by Game
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Retrieve player game-by-game report for a given team.
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `11`
+    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
+    - `season_id` = `5` (or specific season ID)
+    - `team` = `3` (or specific team ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=11&format=HTML&season_id=5&team=3
+```
+
+#### Roster
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Retrieve the roster for a given team.
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `4`
+    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
+    - `season_id` = `5` (or specific season ID)
+    - `team` = `3` (or specific team ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=4&format=HTML&season_id=5&team=3
+```
+
+## Special Reports
+
+#### Team Head to Head
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Retrieve the head-to-head records for two teams for a given season.
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `13`
+    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
+    - `season_id` = `5` (or specific season ID)
+    - `team` = `3` (or specific team ID)
+    - `second_team` = `5` (or specific team ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?season_id=5&step=4&sub=13
+```
+
+#### Player Stats By Team
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Retrieve player stats by team for a given season.
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `1`
+    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
+    - `season_id` = `5` (or specific season ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=1
+```
+
+#### Overall Team Records
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Retrieve detailed team records for a given season.
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `10`
+    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
+    - `season_id` = `5` (or specific season ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=10
+```
+
+#### Team Game Highs and Lows
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Show game records for a given season (i.e., most goals, most saves, etc.).
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `12`
+    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
+    - `season_id` = `5` (or specific season ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=12
+```
+
+#### Attendance Report
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Show the attendance report for a given season.
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `15`
+    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
+    - `season_id` = `5` (or specific season ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=15
+```
+
+#### Hat Tricks and Shutouts
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Show hat trick and shutout records for a given season.
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `16`
+    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
+    - `season_id` = `5` (or specific season ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=16
 ```
