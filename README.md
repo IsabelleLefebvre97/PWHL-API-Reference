@@ -7,9 +7,9 @@ Corrections and suggestions are welcome!
 
 In addition to available formatted data, there appear to be two primary sources for PWHL APIs:
 
-1. HockeyTech/LeagueStat API (`lscluster.hockeytech.com`) - Used primarily for historical data and statistics
+1. **HockeyTech/LeagueStat API** (`lscluster.hockeytech.com`) - Used primarily for historical data and statistics
 
-2. Firebase API (`leaguestat-b9523.firebaseio.com`) - Used primarily for live game data
+2. **Firebase API** (`leaguestat-b9523.firebaseio.com`) - Used primarily for live game data
 
 This document is broken into distinct sections detailing each data source.
 
@@ -20,8 +20,8 @@ This document is broken into distinct sections detailing each data source.
 1. [Base URL](#hockeytech-base-url)
 2. [Seasons](#seasons)
 3. [Schedule](#schedule)
-    1. [Season Schedule]()
-    2. [Get Scorebar](#get-scorebar)
+    1. [Season Schedule](#season-schedule)
+    2. [Scorebar](#scorebar)
 4. [Standings](#standings)
     1. [Get League Standings](#get-league-standings)
     2. [Get Team Standings by Division](#get-team-standings-by-division)
@@ -128,7 +128,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
 
 - **Endpoint**: `index.php`
 - **Method**: GET
-- **Description**: Retrieve the full schedule for a given season.
+- **Description**: Retrieve the full game schedule for a given season.
 - **Parameters**:
     - `feed` = `modulekit`
     - `view` = `schedule`
@@ -141,31 +141,22 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
 curl -X GET "https://lscluster.hockeytech.com/feed/?feed=modulekit&view=schedule&season_id=5&key=446521baf8c38984&client_code=pwhl"
 ```
 
-### Get Scorebar
+### Scorebar
 
 - **Endpoint**: `index.php`
 - **Method**: GET
-- **Description**: Retrieve schedule and score information for upcoming games.
+- **Description**: Retrieve scorebar information (contains game schedules and scores).
 - **Parameters**:
     - `feed` = `modulekit`
     - `view` = `scorebar`
-    - `site_id` = `0`
     - `numberofdaysback` = `1000`
     - `numberofdaysahead` = `1000`
-    - `league_id` = `1`
-    - `lang` = `en`
 - **Response**: JSON format
 
 ###### Example using cURL:
 
 ```bash
-curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=scorebar&site_id=0&numberofdaysback=1000&numberofdaysahead=1000&key=446521baf8c38984&client_code=pwhl&league_id=1&conference=-1&division=-1&lang=en"
-```
-
-For a more limited view with JSON format specified:
-
-```bash
-curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&key=446521baf8c38984&client_code=pwhl&view=scorebar&numberofdaysahead=6&numberofdaysback=0&limit=1000&fmt=json&site_id=0&lang=en&league_id=1"
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=scorebar&numberofdaysback=1000&numberofdaysahead=1000&key=446521baf8c38984&client_code=pwhl"
 ```
 
 ## Standings
@@ -181,7 +172,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&key=
     - `groupTeamsBy` = `division`
     - `context` = `overall`
     - `site_id` = `0`
-    - `season` = `5` (or specific season ID)
+    - `season_id` = `5` (or specific season ID)
     - `special` = `false`
     - `league_id` = `1`
     - `sort` = `points`
@@ -204,7 +195,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
     - `view` = `teams`
     - `groupTeamsBy` = `division`
     - `context` = `overall`
-    - `season` = `5` (or specific season ID)
+    - `season_id` = `5` (or specific season ID)
     - `division` = `1` (division ID)
     - `league_id` = `1`
     - `statsType` = `inline`
@@ -227,7 +218,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 - **Parameters**:
     - `feed` = `statviewfeed`
     - `view` = `players`
-    - `season` = `5` (or specific season ID)
+    - `season_id` = `5` (or specific season ID)
     - `team` = `all`
     - `position` = `skaters`
     - `rookies` = `0`
@@ -252,7 +243,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 - **Parameters**:
     - `feed` = `statviewfeed`
     - `view` = `players`
-    - `season` = `5` (or specific season ID)
+    - `season_id` = `5` (or specific season ID)
     - `team` = `all`
     - `position` = `goalies`
     - `rookies` = `0`
@@ -278,7 +269,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 - **Parameters**:
     - `feed` = `statviewfeed`
     - `view` = `players`
-    - `season` = `5` (or specific season ID)
+    - `season_id` = `5` (or specific season ID)
 - **Response**: JSON format
 
 ###### Example using cURL:
@@ -435,7 +426,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
 - **Parameters**:
     - `feed` = `statviewfeed`
     - `view` = `bootstrap`
-    - `season` = `latest`
+    - `season_id` = `latest`
     - `pageName` = `scorebar`
     - `site_id` = `0`
     - `lang` = `en`
@@ -455,7 +446,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 - **Parameters**:
     - `feed` = `statviewfeed`
     - `view` = `bootstrap`
-    - `season` = `null`
+    - `season_id` = `null`
     - `pageName` = `game-summary`
     - `site_id` = `0`
     - `lang` = `en`
@@ -632,7 +623,7 @@ https://lscluster.hockeytech.com/statview/mobile/pwhl/daily-schedule
 - **Description**: Download the league's game calendar for a given season.
 - **Parameters**:
     - `client_code` = `pwhl`
-    - `season` = `5` (or specific season ID)
+    - `season_id` = `5` (or specific season ID)
 
 ###### Full URL:
 
