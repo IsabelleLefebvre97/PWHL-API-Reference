@@ -5,13 +5,13 @@
 This document serves as an unofficial reference for the Professional Women's Hockey League (PWHL) data sources.
 Corrections and suggestions are welcome!
 
-There appear to be two primary sources for PWHL APIs:
+There appear to be two primary sources for PWHL data:
 
 1. HockeyTech/LeagueStat API (`lscluster.hockeytech.com`) - Used primarily for historical data and statistics
 
 2. Firebase API (`leaguestat-b9523.firebaseio.com`) - Used primarily for live game data
 
-This document is broken into distinct sections detailing each API.
+This document is broken into distinct sections detailing each data source.
 
 ## Table of Contents
 
@@ -108,7 +108,7 @@ https://lscluster.hockeytech.com/statview/mobile/pwhl/daily-schedule
 #### Calendar Feed
 
 - **Endpoint**: `components/calendar/ical_add_games.php`
-- **Description**: Download a game calendar for a given season.
+- **Description**: Download the game calendar for a given season.
 - **Parameters**:
     - `client_code` = `pwhl`
     - `season` = `5` (or specific season ID)
@@ -117,6 +117,54 @@ https://lscluster.hockeytech.com/statview/mobile/pwhl/daily-schedule
 
 ```
 https://lscluster.hockeytech.com/components/calendar/ical_add_games.php?client_code=pwhl&season_id=5
+```
+
+### Game Summaries
+
+- **Endpoint**: `statview/mobile/pwhl/game-center`
+- **Description**: View the game summary for a given game.
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/statview/mobile/pwhl/game-center/137
+```
+
+### Team Rosters
+
+- **Endpoint**: `statview/mobile/pwhl/roster`
+- **Description**: Retrieve a table of player statistics.
+
+###### Full URL:
+
+The example below shows the roster for team 3 (MTL) for season 5 (2024-2025 Regular Season).
+
+```
+https://lscluster.hockeytech.com/statview/mobile/pwhl/roster/3/5
+```
+
+### Player Statistics
+
+- **Endpoint**: `statview/mobile/pwhl/player-stats`
+- **Description**: Retrieve a table of player statistics.
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/statview/mobile/pwhl/player-stats
+```
+
+### Player Profile
+
+- **Endpoint**: `statview/mobile/pwhl/player`
+- **Description**: Retrieve a table of player statistics.
+
+###### Full URL:
+
+The example below shows the profile for player 32 (Laura Stacey) for season 5 (2024-2025 Regular Season).
+
+```
+https://lscluster.hockeytech.com/statview/mobile/pwhl/player/32/5
 ```
 
 ## Statistics
