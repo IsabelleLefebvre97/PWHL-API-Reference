@@ -15,7 +15,7 @@ This document is broken into distinct sections detailing each data source.
 
 ## Table of Contents
 
-### [HockeyTech/LeagueStat API](#hockeytech-api-documentation)
+### [HockeyTech/LeagueStat Data](#hockeytech-api-documentation)
 
 1. [Base URL](#hockeytech-base-url)
 2. [Formatted Data](#formatted-data)
@@ -28,7 +28,7 @@ This document is broken into distinct sections detailing each data source.
     4. [Player Statistics](#player-statistics)
     5. [Player Profile](#player-profile)
 3. [Media Access](#media-access)
-4. [League Information](#league-information)
+4. [API Information](#league-information)
     1. [Standings](#standings)
         1. [Get League Standings](#get-league-standings)
         2. [Get Team Standings by Division](#get-team-standings-by-division)
@@ -203,15 +203,11 @@ https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=0
     - `client_code` = `pwhl`
     - `file_path` = `daily-report`
 
-###### Full URL:
-
-HTML format:
+###### Full URLs:
 
 ```
 https://lscluster.hockeytech.com/download.php?client_code=pwhl&file_path=daily-report/daily-report.html
 ```
-
-PDF format:
 
 ```
 https://lscluster.hockeytech.com/download.php?client_code=pwhl&file_path=daily-report/daily-report.pdf
@@ -222,7 +218,7 @@ https://lscluster.hockeytech.com/download.php?client_code=pwhl&file_path=daily-r
 #### Season Schedule
 
 - **Endpoint**: `media/pwhl/pwhl/index.php`
-- **Description**: Retrieve team standings for the league.
+- **Description**: Retrieve the season schedule for a given team.
 - **Parameters**:
     - `step` = `4`
     - `sub` = `9`
@@ -234,6 +230,40 @@ https://lscluster.hockeytech.com/download.php?client_code=pwhl&file_path=daily-r
 
 ```
 https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=9&format=HTML&season_id=5&team=3
+```
+
+#### Player Game by Game
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Retrieve player game-by-game report for a given team.
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `11`
+    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
+    - `season_id` = `5` (or specific season ID)
+    - `team` = `3` (or specific team ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=11&format=HTML&season_id=5&team=3
+```
+
+#### Roster
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Retrieve the roster for a given team.
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `4`
+    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
+    - `season_id` = `5` (or specific season ID)
+    - `team` = `3` (or specific team ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=4&format=HTML&season_id=5&team=3
 ```
 
 ## Statistics
