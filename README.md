@@ -271,9 +271,105 @@ https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=11&format=
 https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=4&format=HTML&season_id=5&team=3
 ```
 
-## Statistics
+## Special Reports
 
-- **Endpoint**: `https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=0`
+#### Team Head to Head
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Retrieve the head-to-head records for two teams for a given season.
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `13`
+    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
+    - `season_id` = `5` (or specific season ID)
+    - `team` = `3` (or specific team ID)
+    - `second_team` = `5` (or specific team ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?season_id=5&step=4&sub=13
+```
+
+#### Player Stats By Team
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Retrieve player stats by team for a given season.
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `1`
+    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
+    - `season_id` = `5` (or specific season ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=1
+```
+
+#### Overall Team Records
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Retrieve detailed team records for a given season.
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `10`
+    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
+    - `season_id` = `5` (or specific season ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=10
+```
+
+#### Team Game Highs and Lows
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Show game records for a given season (i.e., most goals, most saves, etc.).
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `12`
+    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
+    - `season_id` = `5` (or specific season ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=12
+```
+
+#### Attendance Report
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Show the attendance report for a given season.
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `15`
+    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
+    - `season_id` = `5` (or specific season ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=15
+```
+
+#### Hat Tricks and Shutouts
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Show hat trick and shutout records for a given season.
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `16`
+    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
+    - `season_id` = `5` (or specific season ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=16
+```
 
 ## League Information
 
