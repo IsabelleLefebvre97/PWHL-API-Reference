@@ -35,13 +35,13 @@ This document is broken into distinct sections detailing each data source.
     2. [Goalies]()
         1. [All Goalies](#all-goalies)
         2. [Goalie Statistics by Team](#goalie-statistics-by-team)
-    3. [Players]()
-        1. Season Statistics
-        2. Game-by-Game
-        3. Most Recent Season Statistics
+    3. [Player Details](#player-details)
+        1. [Player Profile](#player-profile)
+        2. [Season Statistics](#season-statistics)
+        3. [Game-by-Game](#game-by-game)
+        4. [Most Recent Season Statistics](#most-recent-season-statistics)
     4. [Top Players](#get-top-players)
-    5. [Get Player Profile](#get-player-profile)
-    6. [Get Player Leaders](#get-player-leaders)
+    5. [Get Player Leaders](#get-player-leaders)
 6. [Game Information](#game-information)
     1. [Get Game Summary](#get-game-summary)
     2. [Get Play-by-Play](#get-play-by-play)
@@ -77,7 +77,7 @@ This document is broken into distinct sections detailing each data source.
     2. [Game Summaries](#game-summaries)
     3. [Team Rosters](#team-rosters)
     4. [Player Statistics](#player-statistics)
-    5. [Player Profile](#player-profile)
+    5. [Player Profile](#player-profile-1)
 3. [Media Access](#media-access)
     1. [Standings](#standings)
     2. [Daily Report](#daily-report)
@@ -368,6 +368,31 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=statviewtype&type=goalies&league_id=1&team_id=3&season_id=5&key=446521baf8c38984&client_code=pwhl"
 ```
 
+### Player Details
+
+#### Player Profile
+
+- **Endpoint**: `index.php`
+- **Method**: GET
+- **Description**: Retrieve detailed information for a specific player.
+- **Parameters**:
+    - `feed` = `statviewfeed`
+    - `view` = `player`
+    - `player_id` = `32` (or specific player ID)
+- **Response**: JSON format
+
+###### Example using cURL:
+
+```bash
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=player&player_id=32&key=446521baf8c38984&client_code=pwhl"
+```
+
+#### Season Statistics
+
+#### Game-by-Game
+
+#### Most Recent Season Statistics
+
 #### Get Top Players
 
 - **Endpoint**: `index.php`
@@ -385,24 +410,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=players&season=5&key=446521baf8c38984&client_code=pwhl"
 ```
 
-#### Get Player Profile
-
-- **Endpoint**: `index.php`
-- **Method**: GET
-- **Description**: Retrieve detailed information for a specific player.
-- **Parameters**:
-    - `feed` = `statviewfeed`
-    - `view` = `player`
-    - `player_id` = `32` (or specific player ID)
-- **Response**: JSON format
-
-###### Example using cURL:
-
-```bash
-curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=player&player_id=32&key=446521baf8c38984&client_code=pwhl"
-```
-
-#### Get Player Leaders
+### Get Player Leaders
 
 - **Endpoint**: `index.php`
 - **Method**: GET
@@ -425,9 +433,9 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=leadersExtended&key=446521baf8c38984&league_id=undefined&season_id=5&division=&conference=&team_id=0&site_id=0&client_code=pwhl&playerTypes=skaters&skaterStatTypes=points,goals&goalieStatTypes=save_percentage,wins,goals_against_average,shutouts&activeOnly=0&lang=en"
 ```
 
-### Game Information
+## Game Information
 
-#### Get Game Summary
+### Get Game Summary
 
 - **Endpoint**: `index.php`
 - **Method**: GET
