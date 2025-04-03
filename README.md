@@ -44,11 +44,12 @@ This document is broken into distinct sections detailing each data source.
         1. [Top Skaters](#top-skaters)
         2. [Top Goalies](#top-goalies)
 6. [Game Information](#game-information)
-    1. [Get Game Summary](#get-game-summary)
-    2. [Get Play-by-Play](#get-play-by-play)
-    3. [Get Game Center Preview](#get-game-center-preview)
+    1. [Game Summary](#game-summary)
+    2. [Game Clock](#game-clock)
+    2. [Play-by-Play (Short)](#play-by-play-short)
+    3. [Play-by-Play (Long)](#play-by-play-long)
+    3. [Game Center Preview](#game-center-preview)
 7. [Playoff Information](#playoff-information)
-    1. [Get Playoff Bracket](#get-playoff-bracket)
 8. [Bootstrap Data](#bootstrap-data)
     1. [Get Scorebar Bootstrap](#get-scorebar-bootstrap)
     2. [Get Game Summary Bootstrap](#get-game-summary-bootstrap)
@@ -58,7 +59,7 @@ This document is broken into distinct sections detailing each data source.
 1. [Base URL](#firebase-base-url)
 2. [Game Data](#game-data)
     1. [All Live Game Data](#all-live-game-data)
-    2. [Game Clock](#game-clock)
+    2. [Game Clock](#game-clock-1)
         1. [Running Clock](#get-running-clock)
         2. [Published Clock](#get-published-clock)
     3. [Game Events](#game-events)
@@ -491,14 +492,14 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 
 ## Game Information
 
-### Get Game Summary
+### Game Summary
 
 - **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve summary information for a specific game.
 - **Parameters**:
-    - `feed` = `statviewfeed`
-    - `view` = `gameSummary`
+    - `feed` = `gc`
+    - `tab` = `gamesummary`
     - `game_id` = `137` (or specific game ID)
     - `site_id` = `0`
     - `lang` = `en`
@@ -507,47 +508,78 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 ###### Example using cURL:
 
 ```bash
-curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=gameSummary&game_id=137&key=446521baf8c38984&site_id=0&client_code=pwhl&lang=en"
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=gamesummary&game_id=137&key=446521baf8c38984&client_code=pwhl"
 ```
 
-#### Get Play-by-Play
+### Game Clock
+
+- **Endpoint**: `index.php`
+- **Method**: GET
+- **Description**: Retrieve the official clock and basic information for a specific game.
+- **Parameters**:
+    - `feed` = `gc`
+    - `tab` = `clock`
+    - `game_id` = `137` (or specific game ID)
+- **Response**: JSON format
+
+###### Example using cURL:
+
+```bash
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=clock&game_id=137&key=446521baf8c38984&client_code=pwhl"
+```
+
+### Play-by-Play (Short)
+
+- **Endpoint**: `index.php`
+- **Method**: GET
+- **Description**: Retrieve summarized play-by-play data for a specific game.
+- **Parameters**:
+    - `feed` = `gc`
+    - `tab` = `pxp`
+    - `game_id` = `137` (or specific game ID)
+- **Response**: JSON format
+
+###### Example using cURL:
+
+```bash
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=pxp&game_id=137&key=446521baf8c38984&client_code=pwhl"
+```
+
+### Play-by-Play (Long)
 
 - **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve play-by-play data for a specific game.
 - **Parameters**:
-    - `feed` = `statviewfeed`
-    - `view` = `gameCenterPlayByPlay`
+    - `feed` = `gc`
+    - `tab` = `pxpverbose`
     - `game_id` = `137` (or specific game ID)
 - **Response**: JSON format
 
 ###### Example using cURL:
 
 ```bash
-curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=gameCenterPlayByPlay&game_id=137&key=446521baf8c38984&client_code=pwhl"
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=pxpverbose&game_id=137&key=446521baf8c38984&client_code=pwhl"
 ```
 
-#### Get Game Center Preview
+### Game Center Preview
 
 - **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve preview information for a specific game.
 - **Parameters**:
-    - `feed` = `statviewfeed`
-    - `view` = `gameCenterPreview`
+    - `feed` = `gc`
+    - `tab` = `preview`
     - `game_id` = `137` (or specific game ID)
-    - `lang` = `en`
 - **Response**: JSON format
 
 ###### Example using cURL:
 
 ```bash
-curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=gameCenterPreview&game_id=137&key=446521baf8c38984&client_code=pwhl&lang=en"
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=preview&game_id=137&key=446521baf8c38984&client_code=pwhl"
 ```
 
-### Playoff Information
-
-#### Get Playoff Bracket
+## Playoff Information
 
 - **Endpoint**: `index.php`
 - **Method**: GET
@@ -555,7 +587,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 - **Parameters**:
     - `feed` = `modulekit`
     - `view` = `brackets`
-    - `season_id` = `3` (or specific season ID)
+    - `season_id` = `3` (or specific playoff season ID)
 - **Response**: JSON format
 
 ###### Example using cURL:
@@ -564,9 +596,9 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=brackets&season_id=3&key=446521baf8c38984&client_code=pwhl"
 ```
 
-### Bootstrap Data
+## Bootstrap Data
 
-#### Get Scorebar Bootstrap
+### Get Scorebar Bootstrap
 
 - **Endpoint**: `index.php`
 - **Method**: GET
@@ -586,7 +618,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=bootstrap&season=latest&pageName=scorebar&key=446521baf8c38984&client_code=pwhl&site_id=0&league_id=&league_code=&conference=-1&division=-1&lang=en"
 ```
 
-#### Get Game Summary Bootstrap
+### Get Game Summary Bootstrap
 
 - **Endpoint**: `index.php`
 - **Method**: GET
