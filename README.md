@@ -5,7 +5,7 @@
 This document serves as an unofficial reference for the Professional Women's Hockey League (PWHL) data sources.
 Corrections and suggestions are welcome!
 
-There appear to be two primary sources for PWHL data:
+In addition to available formatted data, there appear to be two primary sources for PWHL APIs:
 
 1. HockeyTech/LeagueStat API (`lscluster.hockeytech.com`) - Used primarily for historical data and statistics
 
@@ -15,26 +15,34 @@ This document is broken into distinct sections detailing each data source.
 
 ## Table of Contents
 
-### [HockeyTech/LeagueStat Data](#hockeytech-api-documentation)
+### [Formatted Data](#formatted-data)
 
-1. [Base URL](#hockeytech-base-url)
-2. [Formatted Data](#formatted-data)
-    1. [League Schedule](#league-schedule)
-        1. [Monthly Schedule](#monthly-schedule)
-        2. [Daily Schedule](#daily-schedule)
-        3. [Calendar Feed](#calendar-feed)
-    2. [Game Summaries](#game-summaries)
-    3. [Team Rosters](#team-rosters)
-    4. [Player Statistics](#player-statistics)
-    5. [Player Profile](#player-profile)
-3. [Media Access](#media-access)
+1. [League Schedule](#league-schedule)
+    1. [Monthly Schedule](#monthly-schedule)
+    2. [Daily Schedule](#daily-schedule)
+    3. [Calendar Feed](#calendar-feed)
+2. [Game Summaries](#game-summaries)
+3. [Team Rosters](#team-rosters)
+4. [Player Statistics](#player-statistics)
+5. [Player Profile](#player-profile)
+6. [Media Access](#media-access)
     1. [Standings](#standings)
     2. [Daily Report](#daily-report)
     3. [Team Reports](#team-reports)
         1. [Season Schedule](#season-schedule)
         2. [Player Game by Game](#player-game-by-game)
         3. [Roster](#roster)
-    4. []
+    4. [Special Reports](#special-reports)
+        1. [Team Head to Head](#team-head-to-head)
+        2. [Player Stats By Team](#player-stats-by-team)
+        3. [Overall Team Records](#overall-team-records)
+        4. [Team Game Highs and Lows](#team-game-highs-and-lows)
+        5. [Attendance Report](#attendance-report)
+
+### [HockeyTech/LeagueStat Data](#hockeytech-api-documentation)
+
+1. [Base URL](#hockeytech-base-url)
+
 4. [API Information](#league-information)
     1. [Standings](#standings-1)
         1. [Get League Standings](#get-league-standings)
