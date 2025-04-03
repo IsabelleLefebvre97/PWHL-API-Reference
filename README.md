@@ -19,23 +19,24 @@ This document is broken into distinct sections detailing each data source.
 
 1. [Base URL](#hockeytech-base-url)
 2. [Seasons](#seasons)
-3. [Standings](#standings)
+3. [Schedule](#schedule)
+    1. [Season Schedule]()
+    2. [Get Scorebar](#get-scorebar)
+4. [Standings](#standings)
     1. [Get League Standings](#get-league-standings)
     2. [Get Team Standings by Division](#get-team-standings-by-division)
-4. [Players](#players)
+5. [Players](#players)
     1. [Get All Skaters](#get-all-skaters)
     2. [Get All Goalies](#get-all-goalies)
     3. [Get Top Players](#get-top-players)
     4. [Get Player Profile](#get-player-profile)
     5. [Get Player Leaders](#get-player-leaders)
-5. [Teams](#teams)
+6. [Teams](#teams)
     1. [Get Team Roster](#get-team-roster)
-6. [Game Information](#game-information)
+7. [Game Information](#game-information)
     1. [Get Game Summary](#get-game-summary)
     2. [Get Play-by-Play](#get-play-by-play)
     3. [Get Game Center Preview](#get-game-center-preview)
-7. [Schedule](#schedule)
-    1. [Get Scorebar](#get-scorebar)
 8. [Playoffs](#playoffs)
     1. [Get Playoff Bracket](#get-playoff-bracket)
 9. [Bootstrap Data](#bootstrap-data)
@@ -119,6 +120,52 @@ key=446521baf8c38984&client_code=pwhl
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=seasons&key=446521baf8c38984&client_code=pwhl"
+```
+
+## Schedule
+
+### Season Schedule
+
+- **Endpoint**: `index.php`
+- **Method**: GET
+- **Description**: Retrieve the full schedule for a given season.
+- **Parameters**:
+    - `feed` = `modulekit`
+    - `view` = `schedule`
+    - `season_id` = `5` (or specific season ID)
+- **Response**: JSON format
+
+###### Example using cURL:
+
+```bash
+curl -X GET "https://lscluster.hockeytech.com/feed/?feed=modulekit&view=schedule&season_id=5&key=446521baf8c38984&client_code=pwhl"
+```
+
+### Get Scorebar
+
+- **Endpoint**: `index.php`
+- **Method**: GET
+- **Description**: Retrieve schedule and score information for upcoming games.
+- **Parameters**:
+    - `feed` = `modulekit`
+    - `view` = `scorebar`
+    - `site_id` = `0`
+    - `numberofdaysback` = `1000`
+    - `numberofdaysahead` = `1000`
+    - `league_id` = `1`
+    - `lang` = `en`
+- **Response**: JSON format
+
+###### Example using cURL:
+
+```bash
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=scorebar&site_id=0&numberofdaysback=1000&numberofdaysahead=1000&key=446521baf8c38984&client_code=pwhl&league_id=1&conference=-1&division=-1&lang=en"
+```
+
+For a more limited view with JSON format specified:
+
+```bash
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&key=446521baf8c38984&client_code=pwhl&view=scorebar&numberofdaysahead=6&numberofdaysback=0&limit=1000&fmt=json&site_id=0&lang=en&league_id=1"
 ```
 
 ## Standings
@@ -357,35 +404,6 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=gameCenterPreview&game_id=137&key=446521baf8c38984&client_code=pwhl&lang=en"
-```
-
-### Schedule
-
-#### Get Scorebar
-
-- **Endpoint**: `index.php`
-- **Method**: GET
-- **Description**: Retrieve schedule and score information for upcoming games.
-- **Parameters**:
-    - `feed` = `modulekit`
-    - `view` = `scorebar`
-    - `site_id` = `0`
-    - `numberofdaysback` = `0`
-    - `numberofdaysahead` = `1000`
-    - `league_id` = `1`
-    - `lang` = `en`
-- **Response**: JSON format
-
-###### Example using cURL:
-
-```bash
-curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=scorebar&site_id=0&numberofdaysback=0&numberofdaysahead=1000&key=446521baf8c38984&client_code=pwhl&league_id=1&conference=-1&division=-1&lang=en"
-```
-
-For a more limited view with JSON format specified:
-
-```bash
-curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&key=446521baf8c38984&client_code=pwhl&view=scorebar&numberofdaysahead=6&numberofdaysback=0&limit=1000&fmt=json&site_id=0&lang=en&league_id=1"
 ```
 
 ### Playoffs
