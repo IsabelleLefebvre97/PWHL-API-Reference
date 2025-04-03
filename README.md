@@ -46,9 +46,9 @@ This document is broken into distinct sections detailing each data source.
 6. [Game Information](#game-information)
     1. [Game Summary](#game-summary)
     2. [Game Clock](#game-clock)
-    2. [Play-by-Play (Short)](#play-by-play-short)
-    3. [Play-by-Play (Long)](#play-by-play-long)
-    3. [Game Center Preview](#game-center-preview)
+    3. [Play-by-Play (Short)](#play-by-play-short)
+    4. [Play-by-Play (Long)](#play-by-play-long)
+    5. [Game Center Preview](#game-center-preview)
 7. [Playoff Information](#playoff-information)
 8. [Bootstrap Data](#bootstrap-data)
     1. [Get Scorebar Bootstrap](#get-scorebar-bootstrap)
@@ -124,7 +124,7 @@ key=446521baf8c38984&client_code=pwhl
     - `feed` = `modulekit`
     - `view` = `seasons`
 - **Response**: JSON format
-- **Output**: [seasons.json](./data/seasons.json)
+- **Output**: [seasons.csv](./data/seasons.csv)
 
 **Example using cURL:**
 
@@ -200,6 +200,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
     - `view` = `teamsbyseason`
     - `season_id` = `5` (or specific season ID)
 - **Response**: JSON format
+- **Output**: [teams.csv](./data/teams.csv)
 
 **Example using cURL:**
 
@@ -1050,18 +1051,15 @@ https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id
 ## Notes on API Usage
 
 1. **Authentication**:
-    - Firebase API requires both `auth` and `key` parameters
-    - HockeyTech API requires `key` and `client_code` parameters
+    - Firebase API requires both `auth` and `key` parameters.
+    - HockeyTech API requires `key` and `client_code` parameters.
 
 2. **Season IDs**:
-    - HockeyTech API uses numeric season IDs (e.g., `5` for the 2023-2024 season)
+    - Both APIs use numeric season IDs (e.g., `5` for the 2024-2025 season).
 
 3. **Game IDs**:
-    - Each game has a unique numeric ID used across both API systems
+    - Each game has a unique numeric ID used across both API systems.
 
-4. **Pagination**:
-    - Use `limit` and `first` (or `start`) parameters for pagination in HockeyTech API endpoints
-
-5. **Error Handling**:
-    - The APIs do not consistently return standard HTTP status codes for errors
-    - Check for specific error fields in the JSON response
+4. **Error Handling**:
+    - The APIs do not consistently return standard HTTP status codes for errors.
+    - Check for specific error fields in the JSON response.
