@@ -18,26 +18,27 @@ This document is broken into distinct sections detailing each data source.
 ### [HockeyTech/LeagueStat API](#hockeytech-api-documentation)
 
 1. [Base URL](#hockeytech-base-url)
-2. [Standings](#standings)
+2. [Seasons](#seasons)
+3. [Standings](#standings)
     1. [Get League Standings](#get-league-standings)
     2. [Get Team Standings by Division](#get-team-standings-by-division)
-3. [Players](#players)
+4. [Players](#players)
     1. [Get All Skaters](#get-all-skaters)
     2. [Get All Goalies](#get-all-goalies)
     3. [Get Top Players](#get-top-players)
     4. [Get Player Profile](#get-player-profile)
     5. [Get Player Leaders](#get-player-leaders)
-4. [Teams](#teams)
+5. [Teams](#teams)
     1. [Get Team Roster](#get-team-roster)
-5. [Game Information](#game-information)
+6. [Game Information](#game-information)
     1. [Get Game Summary](#get-game-summary)
     2. [Get Play-by-Play](#get-play-by-play)
     3. [Get Game Center Preview](#get-game-center-preview)
-6. [Schedule](#schedule)
+7. [Schedule](#schedule)
     1. [Get Scorebar](#get-scorebar)
-7. [Playoffs](#playoffs)
+8. [Playoffs](#playoffs)
     1. [Get Playoff Bracket](#get-playoff-bracket)
-8. [Bootstrap Data](#bootstrap-data)
+9. [Bootstrap Data](#bootstrap-data)
     1. [Get Scorebar Bootstrap](#get-scorebar-bootstrap)
     2. [Get Game Summary Bootstrap](#get-game-summary-bootstrap)
 
@@ -101,6 +102,23 @@ Most HockeyTech API endpoints require the following parameters:
 
 ```
 key=446521baf8c38984&client_code=pwhl
+```
+
+## Seasons
+
+- **Endpoint**: `index.php`
+- **Method**: GET
+- **Description**: Retrieve all PWHL seasons.
+- **Parameters**:
+    - `feed` = `modulekit`
+    - `view` = `seasons`
+- **Response**: JSON format
+- **Example**: [seasons.json](./data/seasons.json)
+
+###### Example using cURL:
+
+```bash
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=seasons&key=446521baf8c38984&client_code=pwhl"
 ```
 
 ## Standings
