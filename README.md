@@ -94,7 +94,7 @@ data and statistics.
 All endpoints described in this section are relative to the following base URL:
 
 ```
-https://lscluster.hockeytech.com/
+https://lscluster.hockeytech.com/feed/
 ```
 
 Most HockeyTech API endpoints require the following parameters:
@@ -107,7 +107,7 @@ key=446521baf8c38984&client_code=pwhl
 
 ### Get League Standings
 
-- **Endpoint**: `feed/index.php`
+- **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve current PWHL standings grouped by division.
 - **Parameters**:
@@ -131,7 +131,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 
 #### Get Team Standings by Division
 
-- **Endpoint**: `feed/index.php`
+- **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve team standings for a specific division.
 - **Parameters**:
@@ -156,7 +156,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 
 #### Get All Skaters
 
-- **Endpoint**: `feed/index.php`
+- **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve statistics for all skaters in the league.
 - **Parameters**:
@@ -181,7 +181,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 
 #### Get All Goalies
 
-- **Endpoint**: `feed/index.php`
+- **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve statistics for all goalies in the league.
 - **Parameters**:
@@ -207,7 +207,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 
 #### Get Top Players
 
-- **Endpoint**: `feed/index.php`
+- **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve statistics for top players in the league.
 - **Parameters**:
@@ -224,7 +224,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 
 #### Get Player Profile
 
-- **Endpoint**: `feed/index.php`
+- **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve detailed information for a specific player.
 - **Parameters**:
@@ -241,7 +241,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 
 #### Get Player Leaders
 
-- **Endpoint**: `feed/index.php`
+- **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve extended statistics for league leaders.
 - **Parameters**:
@@ -266,7 +266,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 
 #### Get Team Roster
 
-- **Endpoint**: `feed/index.php`
+- **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve roster for a specific team.
 - **Parameters**:
@@ -289,7 +289,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 
 #### Get Game Summary
 
-- **Endpoint**: `feed/index.php`
+- **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve summary information for a specific game.
 - **Parameters**:
@@ -308,7 +308,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 
 #### Get Play-by-Play
 
-- **Endpoint**: `feed/index.php`
+- **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve play-by-play data for a specific game.
 - **Parameters**:
@@ -325,7 +325,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 
 #### Get Game Center Preview
 
-- **Endpoint**: `feed/index.php`
+- **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve preview information for a specific game.
 - **Parameters**:
@@ -345,7 +345,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 
 #### Get Scorebar
 
-- **Endpoint**: `feed/index.php`
+- **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve schedule and score information for upcoming games.
 - **Parameters**:
@@ -374,7 +374,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&key=
 
 #### Get Playoff Bracket
 
-- **Endpoint**: `feed/index.php`
+- **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve playoff bracket information.
 - **Parameters**:
@@ -393,7 +393,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
 
 #### Get Scorebar Bootstrap
 
-- **Endpoint**: `feed/index.php`
+- **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve bootstrap configuration data for scorebar.
 - **Parameters**:
@@ -413,7 +413,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 
 #### Get Game Summary Bootstrap
 
-- **Endpoint**: `feed/index.php`
+- **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve bootstrap configuration data for game summary.
 - **Parameters**:
