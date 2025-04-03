@@ -19,8 +19,16 @@ This document is broken into distinct sections detailing each data source.
 
 1. [Base URL](#hockeytech-base-url)
 2. [Formatted Data](#formatted-data)
-    1.
-3. [League Information](#league-information)
+    1. [League Schedule](#league-schedule)
+        2. [Monthly Schedule](#monthly-schedule)
+        3. [Daily Schedule](#daily-schedule)
+        4. [Calendar Feed](#calendar-feed)
+    2. [Game Summaries](#game-summaries)
+    3. [Team Rosters](#team-rosters)
+    4. [Player Statistics](#player-statistics)
+    5. [Player Profile](#player-profile)
+3. [Media Access](#media-access)
+4. [League Information](#league-information)
     1. [Standings](#standings)
         1. [Get League Standings](#get-league-standings)
         2. [Get Team Standings by Division](#get-team-standings-by-division)
@@ -165,6 +173,67 @@ The example below shows the profile for player 32 (Laura Stacey) for season 5 (2
 
 ```
 https://lscluster.hockeytech.com/statview/mobile/pwhl/player/32/5
+```
+
+## Media Access
+
+### Standings
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Retrieve team standings for the league.
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `0`
+    - `season_id` = `5` (or specific season ID)
+    - `order` = `overall`
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=0
+```
+
+### Media Kits
+
+#### Daily Report
+
+- **Endpoint**: `download.php`
+- **Description**: View the daily report for the league.
+- **Parameters**:
+    - `client_code` = `pwhl`
+    - `file_path` = `daily-report`
+
+###### Full URL:
+
+HTML format:
+
+```
+https://lscluster.hockeytech.com/download.php?client_code=pwhl&file_path=daily-report/daily-report.html
+```
+
+PDF format:
+
+```
+https://lscluster.hockeytech.com/download.php?client_code=pwhl&file_path=daily-report/daily-report.pdf
+```
+
+### Team Reports
+
+#### Season Schedule
+
+- **Endpoint**: `media/pwhl/pwhl/index.php`
+- **Description**: Retrieve team standings for the league.
+- **Parameters**:
+    - `step` = `4`
+    - `sub` = `9`
+    - `format` = `HTML` (or `CSV`, `TAB`, `Word2000`)
+    - `season_id` = `5` (or specific season ID)
+    - `team` = `3` (or specific team ID)
+
+###### Full URL:
+
+```
+https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=9&format=HTML&season_id=5&team=3
 ```
 
 ## Statistics
