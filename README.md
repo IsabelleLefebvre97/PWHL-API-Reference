@@ -81,6 +81,7 @@ This document is broken into distinct sections detailing each data source.
         3. [Overall Team Records](#overall-team-records)
         4. [Team Game Highs and Lows](#team-game-highs-and-lows)
         5. [Attendance Report](#attendance-report)
+        6. [Hat Tricks and Shutouts](#hat-tricks-and-shutouts)
 
 ---
 
@@ -554,7 +555,7 @@ curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/shotssummary.json?
 
 # Formatted Data Documentation
 
-This section provides references for the publically-available formatted data, such as game calendars, standings tables,
+This section provides references for the publicly-available formatted data, such as game calendars, standings tables,
 and player statistics.
 
 ## HockeyTech Base URL
@@ -573,7 +574,7 @@ https://lscluster.hockeytech.com/
 #### Monthly Schedule
 
 - **Endpoint**: `statview/mobile/pwhl/schedule`
-- **Description**: View a calendar of games for the current month.
+- **Description**: View a list of games by calendar month.
 
 ###### Full URL:
 
@@ -584,7 +585,7 @@ https://lscluster.hockeytech.com/statview/mobile/pwhl/schedule
 #### Daily Schedule
 
 - **Endpoint**: `statview/mobile/pwhl/daily-schedule`
-- **Description**: View a list of games by date.
+- **Description**: View a list of games by day.
 
 ###### Full URL:
 
@@ -595,7 +596,7 @@ https://lscluster.hockeytech.com/statview/mobile/pwhl/daily-schedule
 #### Calendar Feed
 
 - **Endpoint**: `components/calendar/ical_add_games.php`
-- **Description**: Download the game calendar for a given season.
+- **Description**: Download the league's game calendar for a given season.
 - **Parameters**:
     - `client_code` = `pwhl`
     - `season` = `5` (or specific season ID)
@@ -620,7 +621,7 @@ https://lscluster.hockeytech.com/statview/mobile/pwhl/game-center/137
 ### Team Rosters
 
 - **Endpoint**: `statview/mobile/pwhl/roster`
-- **Description**: Retrieve a table of player statistics.
+- **Description**: View team rosters.
 
 ###### Full URL:
 
@@ -633,7 +634,7 @@ https://lscluster.hockeytech.com/statview/mobile/pwhl/roster/3/5
 ### Player Statistics
 
 - **Endpoint**: `statview/mobile/pwhl/player-stats`
-- **Description**: Retrieve a table of player statistics.
+- **Description**: View a player statistics table.
 
 ###### Full URL:
 
@@ -644,7 +645,7 @@ https://lscluster.hockeytech.com/statview/mobile/pwhl/player-stats
 ### Player Profile
 
 - **Endpoint**: `statview/mobile/pwhl/player`
-- **Description**: Retrieve a table of player statistics.
+- **Description**: View a given player's profile.
 
 ###### Full URL:
 
@@ -743,7 +744,7 @@ https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=11&format=
 https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?step=4&sub=4&format=HTML&season_id=5&team=3
 ```
 
-## Special Reports
+### Special Reports
 
 #### Team Head to Head
 
