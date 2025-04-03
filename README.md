@@ -114,7 +114,7 @@ key=446521baf8c38984&client_code=pwhl
     - `feed` = `modulekit`
     - `view` = `seasons`
 - **Response**: JSON format
-- **Example**: [seasons.json](./data/seasons.json)
+- **Output**: [seasons.json](./data/seasons.json)
 
 ###### Example using cURL:
 
