@@ -20,8 +20,9 @@ This document is broken into distinct sections detailing each data source.
 1. [Base URL](#hockeytech-base-url)
 2. [Season Information](#season-information)
 3. [Schedule Information](#schedule-information)
-    1. [Season Schedule](#season-schedule)
-    2. [Scorebar](#scorebar)
+    1. [Season Schedule](#season-game-schedule)
+    2. [Team Schedule](#team-schedule)
+    3. [Scorebar](#scorebar)
 4. [Team Information](#team-information)
     1. [Teams By Season](#all-teams)
     2. [Rosters](#rosters)
@@ -124,7 +125,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
 
 ## Schedule Information
 
-### Season Schedule
+### Season Game Schedule
 
 - **Endpoint**: `index.php`
 - **Method**: GET
@@ -141,7 +142,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
 curl -X GET "https://lscluster.hockeytech.com/feed/?feed=modulekit&view=schedule&season_id=5&key=446521baf8c38984&client_code=pwhl"
 ```
 
-### Schedule By Team
+### Team Schedule
 
 - **Endpoint**: `index.php`
 - **Method**: GET
