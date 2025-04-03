@@ -23,23 +23,23 @@ This document is broken into distinct sections detailing each data source.
     1. [Season Schedule](#season-schedule)
     2. [Scorebar](#scorebar)
 4. [Team Information](#team-information)
-    1. [Teams By Season](#teams-by-season)
-    2. [League Standings](#league-standings)
-5. [Players](#players)
+    1. [Teams By Season](#all-teams)
+    2. [Rosters](#rosters)
+    3. [League Standings](#league-standings)
+    4. [Special Team Statistics](#special-team-statistics)
+5. [Player Information](#player-information)
     1. [Get All Skaters](#get-all-skaters)
     2. [Get All Goalies](#get-all-goalies)
     3. [Get Top Players](#get-top-players)
     4. [Get Player Profile](#get-player-profile)
     5. [Get Player Leaders](#get-player-leaders)
-6. [Teams](#teams)
-    1. [Get Team Roster](#get-team-roster)
-7. [Game Information](#game-information)
+6. [Game Information](#game-information)
     1. [Get Game Summary](#get-game-summary)
     2. [Get Play-by-Play](#get-play-by-play)
     3. [Get Game Center Preview](#get-game-center-preview)
-8. [Playoffs](#playoffs)
+7. [Playoffs](#playoffs)
     1. [Get Playoff Bracket](#get-playoff-bracket)
-9. [Bootstrap Data](#bootstrap-data)
+8. [Bootstrap Data](#bootstrap-data)
     1. [Get Scorebar Bootstrap](#get-scorebar-bootstrap)
     2. [Get Game Summary Bootstrap](#get-game-summary-bootstrap)
 
@@ -180,7 +180,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
 
 ## Team Information
 
-### Teams By Season
+### All Teams
 
 - **Endpoint**: `index.php`
 - **Method**: GET
@@ -195,6 +195,24 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=teamsbyseason&season_id=5&key=446521baf8c38984&client_code=pwhl"
+```
+
+### Rosters
+
+- **Endpoint**: `index.php`
+- **Method**: GET
+- **Description**: Retrieve roster for a specific team.
+- **Parameters**:
+    - `feed` = `modulekit`
+    - `view` = `roster`
+    - `team_id` = `3` (or specific team ID)
+    - `season_id` = `5` (or specific season ID)
+- **Response**: JSON format
+
+###### Example using cURL:
+
+```bash
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=roster&team_id=3&season_id=5&key=446521baf8c38984&client_code=pwhl"
 ```
 
 ### League Standings
@@ -244,7 +262,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=teams&groupTeamsBy=division&season=5&special=true&key=446521baf8c38984&client_code=pwhl"
 ```
 
-### Players
+## Player Information
 
 #### Get All Skaters
 
@@ -352,29 +370,6 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=leadersExtended&key=446521baf8c38984&league_id=undefined&season_id=5&division=&conference=&team_id=0&site_id=0&client_code=pwhl&playerTypes=skaters&skaterStatTypes=points,goals&goalieStatTypes=save_percentage,wins,goals_against_average,shutouts&activeOnly=0&lang=en"
-```
-
-### Teams
-
-#### Get Team Roster
-
-- **Endpoint**: `index.php`
-- **Method**: GET
-- **Description**: Retrieve roster for a specific team.
-- **Parameters**:
-    - `feed` = `statviewfeed`
-    - `view` = `roster`
-    - `team_id` = `3` (or specific team ID)
-    - `season_id` = `5` (or specific season ID)
-    - `site_id` = `0`
-    - `league_id` = `1`
-    - `lang` = `en`
-- **Response**: JSON format
-
-###### Example using cURL:
-
-```bash
-curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=roster&team_id=3&season_id=5&key=446521baf8c38984&client_code=pwhl&site_id=0&league_id=1&lang=en"
 ```
 
 ### Game Information
