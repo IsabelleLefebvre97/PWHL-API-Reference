@@ -435,27 +435,6 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 
 ---
 
-## Notes on API Usage
-
-1. **Authentication**:
-    - Firebase API requires both `auth` and `key` parameters
-    - HockeyTech API requires `key` and `client_code` parameters
-
-2. **Season IDs**:
-    - HockeyTech API uses numeric season IDs (e.g., `5` for the 2023-2024 season)
-
-3. **Game IDs**:
-    - Each game has a unique numeric ID used across both API systems
-
-4. **Pagination**:
-    - Use `limit` and `first` (or `start`) parameters for pagination in HockeyTech API endpoints
-
-5. **Error Handling**:
-    - The APIs do not consistently return standard HTTP status codes for errors
-    - Check for specific error fields in the JSON response
-
----
-
 # Firebase API Documentation
 
 This section provides documentation for the PWHL Firebase API, which is primarily used for real-time game data.
@@ -570,6 +549,8 @@ curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/penalties.json?aut
 ```bash
 curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/shotssummary.json?auth=uwM69pPkdUhb0UuVAxM8IcA6pBAzATAxOc8979oJ"
 ```
+
+---
 
 # Formatted Data Documentation
 
@@ -861,3 +842,24 @@ https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id
 ```
 https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id=5&step=4&sub=16
 ```
+
+---
+
+## Notes on API Usage
+
+1. **Authentication**:
+    - Firebase API requires both `auth` and `key` parameters
+    - HockeyTech API requires `key` and `client_code` parameters
+
+2. **Season IDs**:
+    - HockeyTech API uses numeric season IDs (e.g., `5` for the 2023-2024 season)
+
+3. **Game IDs**:
+    - Each game has a unique numeric ID used across both API systems
+
+4. **Pagination**:
+    - Use `limit` and `first` (or `start`) parameters for pagination in HockeyTech API endpoints
+
+5. **Error Handling**:
+    - The APIs do not consistently return standard HTTP status codes for errors
+    - Check for specific error fields in the JSON response
