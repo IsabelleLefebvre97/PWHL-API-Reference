@@ -24,7 +24,6 @@ This document is broken into distinct sections detailing each API.
       2. [Goals](#get-goals)
       3. [Penalties](#get-penalties)
       4. [Shot Summary](#get-shot-summary)
-   4. [Specific Game Data](#specific-game-data)
 
 ### [HockeyTech/LeagueStat API](#hockeytech-api-documentation)
 1. [Base URL](#hockeytech-base-url)
@@ -158,20 +157,6 @@ curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/penalties.json?aut
 ###### Example using cURL:
 ```bash
 curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/shotssummary.json?auth=uwM69pPkdUhb0UuVAxM8IcA6pBAzATAxOc8979oJ"
-```
-
-### Specific Game Data
-
-- **Endpoint**: `/1/games/{gameId}.json`
-- **Method**: GET
-- **Description**: Retrieve data for a specific game.
-- **Parameters**:
-  - `gameId` (int) - Game ID
-- **Response**: JSON format
-
-###### Example using cURL:
-```bash
-curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/1/games/105.json?auth=uwM69pPkdUhb0UuVAxM8IcA6pBAzATAxOc8979oJ"
 ```
 
 ---
