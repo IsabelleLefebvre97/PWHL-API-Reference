@@ -18,13 +18,13 @@ This document is broken into distinct sections detailing each data source.
 ### [HockeyTech/LeagueStat API](#hockeytech-api-documentation)
 
 1. [Base URL](#hockeytech-base-url)
-2. [Seasons](#seasons)
-3. [Schedule](#schedule)
+2. [Season Information](#season-information)
+3. [Schedule Information](#schedule-information)
     1. [Season Schedule](#season-schedule)
     2. [Scorebar](#scorebar)
-4. [Standings](#standings)
-    1. [Get League Standings](#get-league-standings)
-    2. [Get Team Standings by Division](#get-team-standings-by-division)
+4. [Team Information](#team-information)
+    1. [Teams By Season](#teams-by-season)
+    2. [League Standings](#league-standings)
 5. [Players](#players)
     1. [Get All Skaters](#get-all-skaters)
     2. [Get All Goalies](#get-all-goalies)
@@ -70,7 +70,7 @@ This document is broken into distinct sections detailing each data source.
     4. [Player Statistics](#player-statistics)
     5. [Player Profile](#player-profile)
 3. [Media Access](#media-access)
-    1. [Standings](#standings-1)
+    1. [Standings](#standings)
     2. [Daily Report](#daily-report)
     3. [Team Reports](#team-reports)
         1. [Season Schedule](#season-schedule)
@@ -105,7 +105,7 @@ Most HockeyTech API endpoints require the following parameters:
 key=446521baf8c38984&client_code=pwhl
 ```
 
-## Seasons
+## Season Information
 
 - **Endpoint**: `index.php`
 - **Method**: GET
@@ -122,7 +122,7 @@ key=446521baf8c38984&client_code=pwhl
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=seasons&key=446521baf8c38984&client_code=pwhl"
 ```
 
-## Schedule
+## Schedule Information
 
 ### Season Schedule
 
@@ -139,6 +139,25 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
 
 ```bash
 curl -X GET "https://lscluster.hockeytech.com/feed/?feed=modulekit&view=schedule&season_id=5&key=446521baf8c38984&client_code=pwhl"
+```
+
+### Schedule By Team
+
+- **Endpoint**: `index.php`
+- **Method**: GET
+- **Description**: Retrieve the game schedule for a given team and season.
+- **Parameters**:
+    - `feed` = `statviewfeed`
+    - `view` = `schedule`
+    - `team` = `3` (or specific team ID)
+    - `season` = `5` (or specific season ID)
+    - `month` = `-1` (to include all months)
+- **Response**: JSON format
+
+###### Example using cURL:
+
+```bash
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=schedule&team=3&season=5&month=-1&key=446521baf8c38984&client_code=pwhl"
 ```
 
 ### Scorebar
@@ -159,20 +178,37 @@ curl -X GET "https://lscluster.hockeytech.com/feed/?feed=modulekit&view=schedule
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=scorebar&numberofdaysback=1000&numberofdaysahead=1000&key=446521baf8c38984&client_code=pwhl"
 ```
 
-## Standings
+## Team Information
 
-### Get League Standings
+### Teams By Season
 
 - **Endpoint**: `index.php`
 - **Method**: GET
-- **Description**: Retrieve current PWHL standings grouped by division.
+- **Description**: Retrieve all PWHL teams for a given season.
+- **Parameters**:
+    - `feed` = `modulekit`
+    - `view` = `teamsbyseason`
+    - `season_id` = `5` (or specific season ID)
+- **Response**: JSON format
+
+###### Example using cURL:
+
+```bash
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=teamsbyseason&season_id=5&key=446521baf8c38984&client_code=pwhl"
+```
+
+### League Standings
+
+- **Endpoint**: `index.php`
+- **Method**: GET
+- **Description**: Retrieve PWHL standings for a given season.
 - **Parameters**:
     - `feed` = `statviewfeed`
     - `view` = `teams`
     - `groupTeamsBy` = `division`
     - `context` = `overall`
     - `site_id` = `0`
-    - `season_id` = `5` (or specific season ID)
+    - `season` = `5` (or specific season ID)
     - `special` = `false`
     - `league_id` = `1`
     - `sort` = `points`
@@ -185,27 +221,27 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=teams&groupTeamsBy=division&context=overall&site_id=0&season=5&special=false&key=446521baf8c38984&client_code=pwhl&league_id=1&conference=-1&division=-1&sort=points&lang=en"
 ```
 
-#### Get Team Standings by Division
+### Special Team Statistics
 
 - **Endpoint**: `index.php`
 - **Method**: GET
-- **Description**: Retrieve team standings for a specific division.
+- **Description**: Retrieve special team (i.e., power-play and penalty-kill) statistics for a given season.
 - **Parameters**:
     - `feed` = `statviewfeed`
     - `view` = `teams`
     - `groupTeamsBy` = `division`
     - `context` = `overall`
-    - `season_id` = `5` (or specific season ID)
-    - `division` = `1` (division ID)
+    - `site_id` = `0`
+    - `season` = `5` (or specific season ID)
+    - `special` = `true`
     - `league_id` = `1`
-    - `statsType` = `inline`
     - `lang` = `en`
 - **Response**: JSON format
 
 ###### Example using cURL:
 
 ```bash
-curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=teams&groupTeamsBy=division&context=overall&season=5&division=1&key=446521baf8c38984&client_code=pwhl&league_id=1&statsType=inline&lang=en"
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=teams&groupTeamsBy=division&season=5&special=true&key=446521baf8c38984&client_code=pwhl"
 ```
 
 ### Players
