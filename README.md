@@ -18,8 +18,7 @@ This document is broken into distinct sections detailing each data source.
 ### [HockeyTech/LeagueStat API](#hockeytech-api-documentation)
 
 1. [Base URL](#hockeytech-base-url)
-
-4. [API Information](#league-information)
+2. [API Information](#league-information)
     1. [Standings](#standings-1)
         1. [Get League Standings](#get-league-standings)
         2. [Get Team Standings by Division](#get-team-standings-by-division)
