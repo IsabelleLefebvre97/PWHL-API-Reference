@@ -68,7 +68,7 @@ This document is broken into distinct sections detailing each data source.
     3. [Team Rosters](#team-rosters)
     4. [Player Statistics](#player-statistics)
     5. [Player Profile](#player-profile)
-6. [Media Access](#media-access)
+3. [Media Access](#media-access)
     1. [Standings](#standings)
     2. [Daily Report](#daily-report)
     3. [Team Reports](#team-reports)
