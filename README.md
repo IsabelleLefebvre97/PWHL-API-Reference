@@ -57,16 +57,15 @@ This document is broken into distinct sections detailing each data source.
 ### [Firebase API](#firebase-api-documentation)
 
 1. [Base URL](#firebase-base-url)
-2. [Game Data](#game-data)
-    1. [All Live Game Data](#all-live-game-data)
-    2. [Game Clock](#game-clock-1)
-        1. [Running Clock](#get-running-clock)
-        2. [Published Clock](#get-published-clock)
-    3. [Game Events](#game-events)
-        1. [Faceoffs](#get-faceoffs)
-        2. [Goals](#get-goals)
-        3. [Penalties](#get-penalties)
-        4. [Shot Summary](#get-shot-summary)
+2. [All Live Game Data](#all-live-game-data)
+3. [Game Clock](#game-clock-1)
+    1. [Running Clock](#running-clock)
+    2. [Published Clock](#published-clock)
+4. [Game Events](#game-events)
+    1. [Faceoffs](#faceoffs)
+    2. [Goals](#goals)
+    3. [Penalties](#penalties)
+    4. [Shot Summary](#shot-summary)
 
 ### [Formatted Data](#formatted-data)
 
@@ -658,9 +657,7 @@ The Firebase API endpoints typically require authentication parameters:
 ?auth=uwM69pPkdUhb0UuVAxM8IcA6pBAzATAxOc8979oJ&key=AIzaSyBVn0Gr6zIFtba-hQy3StkifD8bb7Hi68A
 ```
 
-## Game Data
-
-### All Live Game Data
+## All Live Game Data
 
 - **Endpoint**: `.json`
 - **Method**: GET
@@ -673,9 +670,9 @@ The Firebase API endpoints typically require authentication parameters:
 curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl.json?auth=uwM69pPkdUhb0UuVAxM8IcA6pBAzATAxOc8979oJ&key=AIzaSyBVn0Gr6zIFtba-hQy3StkifD8bb7Hi68A"
 ```
 
-### Game Clock
+## Game Clock
 
-#### Get Running Clock
+### Running Clock
 
 - **Endpoint**: `/runningclock.json`
 - **Method**: GET
@@ -688,7 +685,7 @@ curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl.json?auth=uwM69pPk
 curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/runningclock.json?auth=uwM69pPkdUhb0UuVAxM8IcA6pBAzATAxOc8979oJ"
 ```
 
-#### Get Published Clock
+### Published Clock
 
 - **Endpoint**: `/publishedclock.json`
 - **Method**: GET
@@ -701,9 +698,9 @@ curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/runningclock.json?
 curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/publishedclock.json?auth=uwM69pPkdUhb0UuVAxM8IcA6pBAzATAxOc8979oJ"
 ```
 
-### Game Events
+## Game Events
 
-#### Get Faceoffs
+### Faceoffs
 
 - **Endpoint**: `/faceoffs.json`
 - **Method**: GET
@@ -716,7 +713,7 @@ curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/publishedclock.jso
 curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/faceoffs.json?auth=uwM69pPkdUhb0UuVAxM8IcA6pBAzATAxOc8979oJ"
 ```
 
-#### Get Goals
+### Goals
 
 - **Endpoint**: `/goals.json`
 - **Method**: GET
@@ -729,7 +726,7 @@ curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/faceoffs.json?auth
 curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/goals.json?auth=uwM69pPkdUhb0UuVAxM8IcA6pBAzATAxOc8979oJ"
 ```
 
-#### Get Penalties
+### Penalties
 
 - **Endpoint**: `/penalties.json`
 - **Method**: GET
@@ -742,7 +739,7 @@ curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/goals.json?auth=uw
 curl -X GET "https://leaguestat-b9523.firebaseio.com/svf/pwhl/penalties.json?auth=uwM69pPkdUhb0UuVAxM8IcA6pBAzATAxOc8979oJ"
 ```
 
-#### Get Shot Summary
+### Shot Summary
 
 - **Endpoint**: `/shotssummary.json`
 - **Method**: GET
