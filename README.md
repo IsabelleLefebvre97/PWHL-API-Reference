@@ -5,7 +5,7 @@
 This document serves as an unofficial reference for the Professional Women's Hockey League (PWHL) data sources.
 Corrections and suggestions are welcome!
 
-In addition to available formatted data, there appear to be two primary sources for PWHL APIs:
+There appear to be two primary sources for PWHL APIs:
 
 1. **HockeyTech/LeagueStat API** (`lscluster.hockeytech.com`) - Used primarily for historical data and statistics
 
