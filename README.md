@@ -34,7 +34,7 @@ This document is broken into distinct sections detailing each data source.
         1. [Season Schedule](#season-schedule)
         2. [Player Game by Game](#player-game-by-game)
         3. [Roster](#roster)
-    4. [] 
+    4. []
 4. [API Information](#league-information)
     1. [Standings](#standings-1)
         1. [Get League Standings](#get-league-standings)
