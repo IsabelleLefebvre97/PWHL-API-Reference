@@ -99,6 +99,8 @@ This document is broken into distinct sections detailing each data source.
         5. [Attendance Report](#attendance-report)
         6. [Hat Tricks and Shutouts](#hat-tricks-and-shutouts)
 
+### [Notes on API Usage](#notes-on-api-usage)
+
 ---
 
 # HockeyTech API Documentation
@@ -1147,18 +1149,17 @@ https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id
 
 ---
 
-## Notes on API Usage
+# Notes on API Usage
 
 1. **Authentication**:
     - Firebase API requires both `auth` and `key` parameters.
     - HockeyTech API requires `key` and `client_code` parameters.
 
-2. **Season IDs**:
-    - Both APIs use numeric season IDs (e.g., `5` for the 2024-2025 season).
+2. **PWHL IDs**:
+    - Both APIs use numeric season IDs (e.g., `5` for the 2024-2025 season).See [seasons.csv](./data/seasons.csv).
+    - Each team has a unique numeric ID (e.g., `3` for MTL). See [teams.csv](./data/teams.csv).
+    - Games also have unique numeric IDs used across both API systems.
 
-3. **Game IDs**:
-    - Each game has a unique numeric ID used across both API systems.
-
-4. **Error Handling**:
+3. **Error Handling**:
     - The APIs do not consistently return standard HTTP status codes for errors.
     - Check for specific error fields in the JSON response.
