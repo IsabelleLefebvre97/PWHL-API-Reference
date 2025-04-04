@@ -22,12 +22,12 @@ This document is broken into distinct sections detailing each data source.
 3. [Schedule Information](#schedule-information)
     1. [Season Schedule](#season-game-schedule)
     2. [Team Schedule](#team-schedule)
-    3. [Scorebar](#scorebar)
+    3. [Daily Schedule](#daily-schedule)
+    4. [Scorebar](#scorebar)
 4. [Team Information](#team-information)
     1. [All Teams](#all-teams)
     2. [Rosters](#rosters)
     3. [League Standings](#league-standings)
-    4. [Special Team Statistics](#special-team-statistics)
 5. [Player Information](#player-information)
     1. [Skaters](#skaters)
         1. [All Skaters](#all-skaters)
@@ -41,14 +41,19 @@ This document is broken into distinct sections detailing each data source.
         3. [Season Statistics](#season-statistics)
         4. [Most Recent Season Statistics](#most-recent-season-statistics)
     4. [League Leaders](#league-leaders)
-        1. [Top Skaters](#top-skaters)
-        2. [Top Goalies](#top-goalies)
+        1. [Leading Skaters](#leading-skaters)
+        2. [Top Scorers](#top-scorers)
+        3. [Leading Goalies](#leading-goalies)
+        4. [Top Goalies](#top-goalies)
+    5. [Player Streaks](#player-streaks)
+    6. [Player Transactions](#player-transactions)
+    7. [Player Search](#player-search)
 6. [Game Information](#game-information)
-    1. [Game Summary](#game-summary)
+    5. [Game Preview](#game-preview)
     2. [Game Clock](#game-clock)
     3. [Play-by-Play (Short)](#play-by-play-short)
     4. [Play-by-Play (Long)](#play-by-play-long)
-    5. [Game Center Preview](#game-center-preview)
+    1. [Game Summary](#game-summary)
 7. [Playoff Information](#playoff-information)
 8. [Bootstrap Data](#bootstrap-data)
     1. [Get Scorebar Bootstrap](#get-scorebar-bootstrap)
@@ -73,7 +78,7 @@ This document is broken into distinct sections detailing each data source.
 2. [Mobile Site](#mobile-site)
     1. [League Schedule](#league-schedule)
         1. [Monthly Schedule](#monthly-schedule)
-        2. [Daily Schedule](#daily-schedule)
+        2. [Daily Schedule](#daily-schedule-1)
         3. [Calendar Feed](#calendar-feed)
     2. [Game Summaries](#game-summaries)
     3. [Team Rosters](#team-rosters)
@@ -170,6 +175,24 @@ curl -X GET "https://lscluster.hockeytech.com/feed/?feed=modulekit&view=schedule
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=schedule&team=3&season=5&month=-1&key=446521baf8c38984&client_code=pwhl"
 ```
 
+### Daily Schedule
+
+- **Endpoint**: `index.php`
+- **Method**: GET
+- **Description**: Retrieve the daily game schedule.
+- **Parameters**:
+    - `feed` = `modulekit`
+    - `view` = `gamesperday`
+    - `start_date` = `2023-01-01`
+    - `end_date` = `2026-01-01`
+- **Response**: JSON format
+
+**Example using cURL:**
+
+```bash
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=gamesperday&start_date=2023-01-01&end_date=2026-01-01&key=446521baf8c38984&client_code=pwhl"
+```
+
 ### Scorebar
 
 - **Endpoint**: `index.php`
@@ -232,45 +255,17 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
 - **Method**: GET
 - **Description**: Retrieve PWHL standings for a given season.
 - **Parameters**:
-    - `feed` = `statviewfeed`
-    - `view` = `teams`
-    - `groupTeamsBy` = `division`
-    - `context` = `overall`
-    - `site_id` = `0`
-    - `season` = `5` (or specific season ID)
-    - `special` = `false`
-    - `league_id` = `1`
-    - `sort` = `points`
-    - `lang` = `en`
+    - `feed` = `modulekit`
+    - `view` = `statviewtype`
+    - `stat` = `conference`
+    - `type` = `standings`
+    - `season_id` = `5` (or specific season ID)
 - **Response**: JSON format
 
 **Example using cURL:**
 
 ```bash
-curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=teams&groupTeamsBy=division&context=overall&site_id=0&season=5&special=false&key=446521baf8c38984&client_code=pwhl&league_id=1&conference=-1&division=-1&sort=points&lang=en"
-```
-
-### Special Team Statistics
-
-- **Endpoint**: `index.php`
-- **Method**: GET
-- **Description**: Retrieve special team (i.e., power-play and penalty-kill) statistics for a given season.
-- **Parameters**:
-    - `feed` = `statviewfeed`
-    - `view` = `teams`
-    - `groupTeamsBy` = `division`
-    - `context` = `overall`
-    - `site_id` = `0`
-    - `season` = `5` (or specific season ID)
-    - `special` = `true`
-    - `league_id` = `1`
-    - `lang` = `en`
-- **Response**: JSON format
-
-**Example using cURL:**
-
-```bash
-curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=teams&groupTeamsBy=division&season=5&special=true&key=446521baf8c38984&client_code=pwhl"
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=statviewtype&stat=conference&type=standings&season_id=5&key=446521baf8c38984&client_code=pwhl"
 ```
 
 ## Player Information
@@ -378,15 +373,34 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
 - **Method**: GET
 - **Description**: Retrieve detailed information for a specific player.
 - **Parameters**:
-    - `feed` = `statviewfeed`
+    - `feed` = `modulekit`
     - `view` = `player`
+    - `category` = `profile`
     - `player_id` = `32` (or specific player ID)
 - **Response**: JSON format
 
 **Example using cURL:**
 
 ```bash
-curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=player&player_id=32&key=446521baf8c38984&client_code=pwhl"
+curl -X GET "https://lscluster.hockeytech.com/feed/?feed=modulekit&view=player&category=profile&player_id=32&key=446521baf8c38984&client_code=pwhl"
+```
+
+#### Player Media
+
+- **Endpoint**: `index.php`
+- **Method**: GET
+- **Description**: Retrieve media for a specific player.
+- **Parameters**:
+    - `feed` = `modulekit`
+    - `view` = `player`
+    - `category` = `media`
+    - `player_id` = `32` (or specific player ID)
+- **Response**: JSON format
+
+**Example using cURL:**
+
+```bash
+curl -X GET "https://lscluster.hockeytech.com/feed/?feed=modulekit&view=player&category=media&player_id=32&key=446521baf8c38984&client_code=pwhl"
 ```
 
 #### Game-by-Game
@@ -446,26 +460,60 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
 
 ### League Leaders
 
-#### Top Skaters
+#### Leading Skaters
 
 - **Endpoint**: `index.php`
 - **Method**: GET
 - **Description**: Retrieve extended statistics for top skaters.
 - **Parameters**:
-    - `feed` = `statviewfeed`
-    - `view` = `leadersExtended`
+    - `feed` = `modulekit`
+    - `view` = `combinedplayers`
+    - `type` = `skaters`
     - `season_id` = `5` (or specific season ID)
-    - `team_id` = `0` (all teams)
-    - `playerTypes` = `skaters`
-    - `skaterStatTypes` = `points,goals,plus_minus` (comma-separated stat categories)
-    - `activeOnly` = `0`
-    - `lang` = `en`
 - **Response**: JSON format
 
 **Example using cURL:**
 
 ```bash
-curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=leadersExtended&key=446521baf8c38984&season_id=5&division=&conference=&team_id=0&site_id=0&client_code=pwhl&playerTypes=skaters&skaterStatTypes=points,goals,plus_minus&activeOnly=0&lang=en"
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=combinedplayers&type=skaters&season_id=5&key=446521baf8c38984&client_code=pwhl"
+```
+
+#### Top Scorers
+
+- **Endpoint**: `index.php`
+- **Method**: GET
+- **Description**: Retrieve extended statistics for top scorers.
+- **Parameters**:
+    - `feed` = `modulekit`
+    - `view` = `statviewtype`
+    - `type` = `topscorers`
+    - `season_id` = `5` (or specific season ID)
+    - `first` = `0`
+    - `limit` = `100`
+- **Response**: JSON format
+
+**Example using cURL:**
+
+```bash
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=statviewtype&type=topscorers&first=0&limit=100&season_id=5&key=446521baf8c38984&client_code=pwhl"
+```
+
+#### Leading Goalies
+
+- **Endpoint**: `index.php`
+- **Method**: GET
+- **Description**: Retrieve extended statistics for leading goalies.
+- **Parameters**:
+    - `feed` = `modulekit`
+    - `view` = `combinedplayers`
+    - `type` = `goalies`
+    - `season_id` = `5` (or specific season ID)
+- **Response**: JSON format
+
+**Example using cURL:**
+
+```bash
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=combinedplayers&type=goalies&season_id=5&key=446521baf8c38984&client_code=pwhl"
 ```
 
 #### Top Goalies
@@ -474,41 +522,90 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&v
 - **Method**: GET
 - **Description**: Retrieve extended statistics for top goalies.
 - **Parameters**:
-    - `feed` = `statviewfeed`
-    - `view` = `leadersExtended`
+    - `feed` = `modulekit`
+    - `view` = `statviewtype`
+    - `type` = `topgoalies`
     - `season_id` = `5` (or specific season ID)
-    - `team_id` = `0` (all teams)
-    - `playerTypes` = `goalies`
-    - `goalieStatTypes` = `save_percentage,wins,goals_against_average,shutouts` (comma-separated stat categories)
-    - `activeOnly` = `0`
-    - `lang` = `en`
+    - `first` = `0`
+    - `limit` = `100`
 - **Response**: JSON format
 
 **Example using cURL:**
 
 ```bash
-curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=leadersExtended&key=446521baf8c38984&season_id=5&division=&conference=&team_id=0&site_id=0&client_code=pwhl&playerTypes=goalies&goalieStatTypes=save_percentage,wins,goals_against_average,shutouts&activeOnly=0&lang=en"
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=statviewtype&type=topgoalies&first=0&limit=100&season_id=5&key=446521baf8c38984&client_code=pwhl"
+```
+
+### Player Streaks
+
+- **Endpoint**: `index.php`
+- **Method**: GET
+- **Description**: Retrieve player streaks for the given season.
+- **Parameters**:
+    - `feed` = `modulekit`
+    - `view` = `statviewtype`
+    - `type` = `streaks`
+    - `season_id` = `5` (or specific season ID)
+- **Response**: JSON format
+
+**Example using cURL:**
+
+```bash
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=statviewtype&type=streaks&season_id=5&key=446521baf8c38984&client_code=pwhl"
+```
+
+### Player Transactions
+
+- **Endpoint**: `index.php`
+- **Method**: GET
+- **Description**: Retrieve player transactions for the given season.
+- **Parameters**:
+    - `feed` = `modulekit`
+    - `view` = `statviewtype`
+    - `type` = `transactions`
+    - `season_id` = `5` (or specific season ID)
+- **Response**: JSON format
+
+**Example using cURL:**
+
+```bash
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=statviewtype&type=transactions&season_id=5&key=446521baf8c38984&client_code=pwhl"
+```
+
+### Player Search
+
+- **Endpoint**: `index.php`
+- **Method**: GET
+- **Description**: Search function for players.
+- **Parameters**:
+    - `feed` = `modulekit`
+    - `view` = `searchplayers`
+    - `search_term` = `Poulin`
+- **Response**: JSON format
+
+**Example using cURL:**
+
+```bash
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=searchplayers&search_term=Poulin&key=446521baf8c38984&client_code=pwhl"
 ```
 
 ## Game Information
 
-### Game Summary
+### Game Preview
 
 - **Endpoint**: `index.php`
 - **Method**: GET
-- **Description**: Retrieve summary information for a specific game.
+- **Description**: Retrieve preview information for a specific game.
 - **Parameters**:
     - `feed` = `gc`
-    - `tab` = `gamesummary`
+    - `tab` = `preview`
     - `game_id` = `137` (or specific game ID)
-    - `site_id` = `0`
-    - `lang` = `en`
 - **Response**: JSON format
 
 **Example using cURL:**
 
 ```bash
-curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=gamesummary&game_id=137&key=446521baf8c38984&client_code=pwhl"
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=preview&game_id=137&key=446521baf8c38984&client_code=pwhl"
 ```
 
 ### Game Clock
@@ -562,21 +659,23 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=pxp&gam
 curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=pxpverbose&game_id=137&key=446521baf8c38984&client_code=pwhl"
 ```
 
-### Game Center Preview
+### Game Summary
 
 - **Endpoint**: `index.php`
 - **Method**: GET
-- **Description**: Retrieve preview information for a specific game.
+- **Description**: Retrieve summary information for a specific game.
 - **Parameters**:
     - `feed` = `gc`
-    - `tab` = `preview`
+    - `tab` = `gamesummary`
     - `game_id` = `137` (or specific game ID)
+    - `site_id` = `0`
+    - `lang` = `en`
 - **Response**: JSON format
 
 **Example using cURL:**
 
 ```bash
-curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=preview&game_id=137&key=446521baf8c38984&client_code=pwhl"
+curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=gc&tab=gamesummary&game_id=137&key=446521baf8c38984&client_code=pwhl"
 ```
 
 ## Playoff Information
