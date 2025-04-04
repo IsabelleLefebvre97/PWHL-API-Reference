@@ -1,4 +1,4 @@
-season_id,season_name,shortname,career,playoff,start_date,end_date
+id,name,shortname,career,playoff,start_date,end_date
 5,2024-25 Regular Season,2024-25 Reg,1,0,2024-11-25,2025-05-05
 4,2024-25 Preseason,2024-25 Preseason,0,0,2024-11-01,2024-11-29
 3,2024 Playoffs,2024 Playoffs,1,1,2024-05-06,2024-06-10
