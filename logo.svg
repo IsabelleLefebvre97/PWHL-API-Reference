@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg
+        width="100%"
+        height="100%"
+        viewBox="0 0 1080 1080"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xml:space="preserve"
+        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+>
+    <!-- Define common styles as constants -->
+    <defs>
+        <style>
+            .primary-fill {
+                fill: rgb(8, 145, 178);
+                fill-rule: nonzero;
+            }
+            .group-transform {
+                transform: matrix(0.804137, 0, 0, 0.804137, -58.6855, -92.3705);
+            }
+        </style>
+    </defs>
+
+    <!-- Outer group transform -->
+    <g transform="matrix(4.41797, 0, 0, 4.41797, 31.9338, 87.1584)">
+        <!-- Rectangle path -->
+        <g class="group-transform" id="rectangle-group">
+            <path
+                    d="M232.66,346.27L199.34,346.27C196.99,346.27 195.09,348.17 195.09,350.52L195.09,362.09C195.09,364.44 196.99,366.34 199.34,366.34L232.66,366.34C235.01,366.34 236.91,364.44 236.91,362.09L236.91,350.52C236.91,348.17 235.01,346.27 232.66,346.27Z"
+                    class="primary-fill"
+            />
+        </g>
+
+        <!-- Right stick path -->
+        <g class="group-transform" id="right-stick-group">
+            <path
+                    d="M273.77,327.12L166,126.78C163.2,121.58 157.77,118.33 151.86,118.33L135.55,118.33L260.76,351.11C265.81,360.49 275.6,366.35 286.26,366.35L339.6,366.35L356.73,334.5L286.1,334.5C280.94,334.5 276.2,331.67 273.76,327.13L273.77,327.12Z"
+                    class="primary-fill"
+            />
+        </g>
+
+        <!-- Left stick path (mirror of the right stick) -->
+        <g transform="matrix(-0.804137, 0, 0, 0.804137, 288.686, -92.3786)" id="left-stick-group">
+            <path
+                    d="M273.77,327.12L166,126.78C163.2,121.58 157.77,118.33 151.86,118.33L135.55,118.33L260.76,351.11C265.81,360.49 275.6,366.35 286.26,366.35L339.6,366.35L356.73,334.5L286.1,334.5C280.94,334.5 276.2,331.67 273.76,327.13L273.77,327.12Z"
+                    class="primary-fill"
+            />
+        </g>
+    </g>
+</svg>

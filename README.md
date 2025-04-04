@@ -1,4 +1,4 @@
-<img src="/.logo.svg" alt="logo" width="50"/>
+<img src="/logo.svg" alt="logo" width="50"/>
 
 # PWHL Data Documentation
 
