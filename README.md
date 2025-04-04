@@ -1156,7 +1156,7 @@ https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id
     - HockeyTech API requires `key` and `client_code` parameters.
 
 2. **PWHL IDs**:
-    - Both APIs use numeric season IDs (e.g., `5` for the 2024-2025 season).See [seasons.csv](./data/seasons.csv).
+    - Both APIs use numeric season IDs (e.g., `5` for the 2024-2025 season). See [seasons.csv](./data/seasons.csv).
     - Each team has a unique numeric ID (e.g., `3` for MTL). See [teams.csv](./data/teams.csv).
     - Games also have unique numeric IDs used across both API systems.
 
