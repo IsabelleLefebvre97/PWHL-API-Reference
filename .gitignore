@@ -1,0 +1,71 @@
+# Backup and system files
+.DS_Store
+Thumbs.db
+*.db
+
+# IDE files
+.idea/
+*.iml
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vscode/
+__pycache__/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.lock
+*.cache
+*.bak
+*.orig
+
+# Build output directories
+dist/
+build/
+target/
+*.out
+*.class
+*.o
+*.so
+
+# Node.js/JavaScript dependencies and packaging
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+
+# Python virtual environments
+.venv/
+env/
+venv/
+
+# Python-related files
+*.py[cod]
+*.pyo
+*.egg
+*.egg-info/
+.eggs/
+
+# Java-related files
+*.war
+*.jar
+*.ear
+
+# Java/C# debug output
+*.dll
+*.pdb
+*.exe
+*.app
+*.ipa
+
+# Environment variables
+.env
+
+# macOS-specific files
+.symlinks/
+*.DS_Store
