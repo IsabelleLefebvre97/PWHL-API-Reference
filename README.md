@@ -13,6 +13,8 @@ There appear to be two primary sources for PWHL APIs:
 
 This document is broken into distinct sections detailing each data source.
 
+Raw data, in CSV format, is also included in the [data](/data) folder.
+
 ## Table of Contents
 
 ### [HockeyTech/LeagueStat API](#hockeytech-api-documentation)
@@ -131,7 +133,7 @@ key=446521baf8c38984&client_code=pwhl
     - `feed` = `modulekit`
     - `view` = `seasons`
 - **Response**: JSON format
-- **Output**: [seasons.csv](./data/seasons.csv)
+- **Output**: [seasons.csv](data/basic/seasons.csv)
 
 **Example using cURL:**
 
@@ -225,7 +227,7 @@ curl -X GET "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view
     - `view` = `teamsbyseason`
     - `season_id` = `5` (or specific season ID)
 - **Response**: JSON format
-- **Output**: [teams.csv](./data/teams.csv)
+- **Output**: [teams.csv](data/basic/teams.csv)
 
 **Example using cURL:**
 
@@ -1156,8 +1158,8 @@ https://lscluster.hockeytech.com/media/pwhl/pwhl/index.php?format=HTML&season_id
     - HockeyTech API requires `key` and `client_code` parameters.
 
 2. **PWHL IDs**:
-    - Both APIs use numeric season IDs (e.g., `5` for the 2024-2025 season). See [seasons.csv](./data/seasons.csv).
-    - Each team has a unique numeric ID (e.g., `3` for MTL). See [teams.csv](./data/teams.csv).
+    - Both APIs use numeric season IDs (e.g., `5` for the 2024-2025 season). See [seasons.csv](data/basic/seasons.csv).
+    - Each team has a unique numeric ID (e.g., `3` for MTL). See [teams.csv](data/basic/teams.csv).
     - Games also have unique numeric IDs used across both API systems.
 
 3. **Error Handling**:

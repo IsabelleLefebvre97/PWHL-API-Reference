@@ -1,0 +1,235 @@
+id,first_name,last_name,team_id,jersey_number,type,position,position_analysis,shoots,catches,birthdate,hometown,hometown_div,nationality,image
+1,Hannah,Brandt,1,20,skater,C,F,R,,1993-11-27,Vadnais Heights,MN,American,https://assets.leaguestat.com/pwhl/240x240/1.jpg
+2,Emily,Brown,1,2,skater,LD,D,L,,1998-12-30,Blaine,MN,American,https://assets.leaguestat.com/pwhl/240x240/2.jpg
+3,Emma,Buckles,,24,skater,D,D,L,,1999-06-10,Toronto,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/3.jpg
+4,Shiann,Darkangelo,5,27,skater,F,F,L,,1993-11-28,Brighton,MI,American,https://assets.leaguestat.com/pwhl/240x240/4.jpg
+5,Jessica,Digirolamo,1,22,skater,RD,D,L,,1999-02-13,Mississauga,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/5.jpg
+6,Aerin,Frankel,1,31,goalie,G,G,L,L,1999-05-24,Chappaqua,NY,American,https://assets.leaguestat.com/pwhl/240x240/6.jpg
+7,Kaleigh,Fratkin,,13,skater,D,D,R,,1992-03-24,Burnaby,BC,Canadian,https://assets.leaguestat.com/pwhl/240x240/7.jpg
+8,Loren,Gabel,1,36,skater,RW,F,L,,1997-07-24,Kitchener,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/8.jpg
+9,Taylor,Girard,4,71,skater,LW,F,L,,1998-07-17,Macomb,MI,American,https://assets.leaguestat.com/pwhl/240x240/9.jpg
+10,Jess,Healey,,97,skater,D,D,L,,1996-10-14,Edmonton,AB,Canadian,https://assets.leaguestat.com/pwhl/240x240/10.jpg
+11,Sophie,Jaques,2,16,skater,D,D,R,,2000-10-16,Toronto,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/11.jpg
+12,Megan,Keller,1,5,skater,LD,D,L,,1996-05-01,Farmington,MI,American,https://assets.leaguestat.com/pwhl/240x240/12.jpg
+13,Hilary,Knight,1,21,skater,RW,F,R,,1989-07-12,Sun Valley,ID,American,https://assets.leaguestat.com/pwhl/240x240/13.jpg
+14,Nicole,Kosta,,77,skater,F,F,R,,1993-02-27,Mississauga,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/14.jpg
+15,Alina,Müller,1,11,skater,LW,F,L,,1998-03-12,Winterthur,SWI,Swiss,https://assets.leaguestat.com/pwhl/240x240/15.jpg
+16,Jamie Lee,Rattray,1,47,skater,LW,F,L,,1992-09-30,Kanata,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/16.jpg
+17,Theresa,Schafzahl,1,37,skater,RW,F,L,,2000-04-12,Weiz,AUT,Austrian,https://assets.leaguestat.com/pwhl/240x240/17.jpg
+18,Sophie,Shirley,1,9,skater,RW,F,R,,1999-06-30,Saskatoon,SK,Canadian,https://assets.leaguestat.com/pwhl/240x240/18.jpg
+19,Emma,Söderberg,1,30,goalie,G,G,L,L,1998-02-18,Örksköldsvik,SWE,Swedish,https://assets.leaguestat.com/pwhl/240x240/19.jpg
+20,Kendall,Coyne Schofield,2,26,skater,F,F,L,,1992-05-25,Palos Heights,IL,American,https://assets.leaguestat.com/pwhl/240x240/20.jpg
+21,Taylor,Heise,2,27,skater,F,F,R,,2000-03-17,Lake City,MN,American,https://assets.leaguestat.com/pwhl/240x240/21.jpg
+22,Nicole,Hensley,2,29,goalie,G,G,L,L,1994-06-23,Lakewood,CO,American,https://assets.leaguestat.com/pwhl/240x240/22.jpg
+23,Kelly,Pannek,2,12,skater,F,F,R,,1995-12-29,Plymouth,MN,American,https://assets.leaguestat.com/pwhl/240x240/23.jpg
+24,Lee,Stecklein,2,2,skater,D,D,L,,1994-04-23,Roseville,MN,American,https://assets.leaguestat.com/pwhl/240x240/24.jpg
+25,Grace,Zumwinkle,2,13,skater,F,F,R,,1999-04-23,Excelsior,MN,American,https://assets.leaguestat.com/pwhl/240x240/25.jpg
+26,Claire,Dalton,3,42,skater,F,F,R,,2000-03-20,Toronto,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/26.jpg
+27,Jillian,Dempsey,1,14,skater,LW,F,L,,1991-01-19,Winthrop,MA,American,https://assets.leaguestat.com/pwhl/240x240/27.jpg
+28,Ann-Renée,Desbiens,3,35,goalie,G,G,L,L,1994-04-10,Clermont,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/28.jpg
+29,Kennedy,Marchment,3,22,skater,F,F,R,,1996-12-06,Marmora,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/29.jpg
+30,Kristin,O'Neill,3,43,skater,F,F,L,,1998-03-30,Oakville,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/30.jpg
+31,Marie-Philip,Poulin,3,29,skater,F,F,L,,1991-03-28,Beauceville,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/31.jpg
+32,Laura,Stacey,3,7,skater,F,F,R,,1994-05-05,Kleinburg,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/32.jpg
+33,Chloe,Aurard,4,12,skater,F,F,L,,1999-03-15,Villard-de-Lans,FRA,French,https://assets.leaguestat.com/pwhl/240x240/33.jpg
+34,Alex,Carpenter,4,25,skater,F,F,L,,1994-04-13,North Reading,MA,American,https://assets.leaguestat.com/pwhl/240x240/34.jpg
+35,Jade,Downie-Landry,4,27,skater,F,F,L,,1995-10-03,Saint-Jean-sur-Richelieu,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/35.jpg
+36,Jessie,Eldridge,4,9,skater,F,F,R,,1997-12-17,Barrie,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/36.jpg
+37,Elizabeth,Giguère,4,18,skater,F,F,R,,1997-05-08,Quebec City,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/37.jpg
+38,Brooke,Hobson,4,6,skater,D,D,L,,1999-05-27,Prince Albert,SK,Canadian,https://assets.leaguestat.com/pwhl/240x240/38.jpg
+39,Alexandra,Labelle,3,13,skater,F,F,L,,1996-02-27,Saint-Louis-de-Gonzague,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/39.jpg
+40,Paetyn,Levis,4,19,skater,F,F,R,,1999-11-06,Rogers,MN,American,https://assets.leaguestat.com/pwhl/240x240/40.jpg
+41,Abigail,Levy,4,39,goalie,G,G,L,L,2000-04-02,Congers,NY,American,https://assets.leaguestat.com/pwhl/240x240/41.jpg
+42,Abby,Roque,4,11,skater,F,F,R,,1997-09-25,Sault Ste. Marie,MI,American,https://assets.leaguestat.com/pwhl/240x240/42.jpg
+43,Corinne,Schroeder,,,skater,G,G,L,L,1999-08-17,Elm Creek,MB,Canadian,https://assets.leaguestat.com/pwhl/240x240/43.jpg
+44,Ella,Shelton,4,17,skater,D,D,L,,1998-01-19,Ingersoll,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/44.jpg
+45,Kayla,Vespa,4,81,skater,F,F,L,,1997-04-01,Hamilton,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/45.jpg
+46,Olivia,Zafuto,1,3,skater,LD,D,L,,1997-01-25,Niagara Falls,NY,American,https://assets.leaguestat.com/pwhl/240x240/46.jpg
+47,Micah,Zandee-Hart,4,28,skater,D,D,L,,1997-01-13,Saanichton,BC,Canadian,https://assets.leaguestat.com/pwhl/240x240/47.jpg
+48,Sandra,Abstreiter,3,30,goalie,G,G,L,L,1998-07-23,Freising,GER,German,https://assets.leaguestat.com/pwhl/240x240/48.jpg
+49,Lexie,Adzija,1,88,skater,C,F,L,,2000-06-30,St. Thomas,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/49.jpg
+50,Ashton,Bell,5,21,skater,D,D,R,,1999-12-07,Deloraine,MB,Canadian,https://assets.leaguestat.com/pwhl/240x240/50.jpg
+51,Amanda,Boulier,3,44,skater,D,D,R,,1993-03-30,Watertown,CT,American,https://assets.leaguestat.com/pwhl/240x240/51.jpg
+52,Zoe,Boyd,5,3,skater,D,D,L,,2000-08-09,Caledon East,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/52.jpg
+53,Emily,Clark,5,26,skater,F,F,L,,1995-11-28,Saskatoon,SK,Canadian,https://assets.leaguestat.com/pwhl/240x240/53.jpg
+54,Kristin,Della Rovere,,25,skater,F,F,R,,2000-11-30,Caledon East,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/54.jpg
+55,Becca,Gilmore,,10,skater,F,F,R,,1998-02-15,Wayland,MA,American,https://assets.leaguestat.com/pwhl/240x240/55.jpg
+56,Savannah,Harmon,6,15,skater,D,D,L,,1995-10-27,Downers Grove,IL,American,https://assets.leaguestat.com/pwhl/240x240/56.jpg
+57,Gabbie,Hughes,5,17,skater,F,F,L,,1999-10-04,Lino Lakes,MN,American,https://assets.leaguestat.com/pwhl/240x240/57.jpg
+58,Brianne,Jenner,5,19,skater,F,F,R,,1991-05-04,Oakville,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/58.jpg
+59,Emerance,Maschmeyer,5,38,goalie,G,G,L,L,1994-10-05,Bruderheim,AB,Canadian,https://assets.leaguestat.com/pwhl/240x240/59.jpg
+60,Jincy,Roese,5,71,skater,D,D,L,,1997-05-15,O'Fallon,MO,American,https://assets.leaguestat.com/pwhl/240x240/60.jpg
+61,Hayley,Scamurra,6,16,skater,F,F,L,,1994-12-14,Buffalo,NY,American,https://assets.leaguestat.com/pwhl/240x240/61.jpg
+62,Aneta,Tejralová,5,2,skater,D,D,L,,1996-01-04,Prague,CZE,Czech,https://assets.leaguestat.com/pwhl/240x240/62.jpg
+63,Daryl,Watts,6,9,skater,F,F,L,,1999-05-15,Toronto,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/63.jpg
+64,Kristen,Campbell,6,50,goalie,G,G,L,L,1997-11-30,Brandon,MB,Canadian,https://assets.leaguestat.com/pwhl/240x240/64.jpg
+65,Jesse,Compher,6,18,skater,F,F,R,,1999-07-01,Northbrook,IL,American,https://assets.leaguestat.com/pwhl/240x240/65.jpg
+66,Maggie,Connors,6,22,skater,F,F,L,,2000-10-22,St. John's,NL,Canadian,https://assets.leaguestat.com/pwhl/240x240/66.jpg
+67,Renata,Fast,6,14,skater,D,D,R,,1994-10-06,Burlington,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/67.jpg
+68,Kali,Flanagan,6,6,skater,D,D,R,,1995-09-19,Burlington,MA,American,https://assets.leaguestat.com/pwhl/240x240/68.jpg
+69,Brittany,Howard,,41,skater,F,F,R,,1995-11-20,St. Thomas,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/69.jpg
+70,Erica,Howe,,37,goalie,G,G,L,L,1992-07-17,Orleans,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/70.jpg
+71,Jocelyne,Larocque,5,23,skater,D,D,L,,1988-05-19,Ste. Anne,MB,Canadian,https://assets.leaguestat.com/pwhl/240x240/71.jpg
+72,Rebecca,Leslie,5,37,skater,F,F,R,,1996-05-08,Ottawa,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/72.jpg
+73,Emma,Maltais,6,27,skater,F,F,L,,1999-11-04,Burlington,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/73.jpg
+74,Allie,Munroe,6,12,skater,D,D,L,,1997-04-20,Yarmouth,NS,Canadian,https://assets.leaguestat.com/pwhl/240x240/74.jpg
+75,Sarah,Nurse,6,20,skater,F,F,L,,1995-01-04,Hamilton,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/75.jpg
+76,Blayre,Turnbull,6,40,skater,F,F,R,,1993-07-15,Stellarton,NS,Canadian,https://assets.leaguestat.com/pwhl/240x240/76.jpg
+77,Susanna,Tapani,,,skater,,F,L,,,Laitila,Finland,Finnish,https://assets.leaguestat.com/pwhl/240x240/77.jpg
+78,Susanna,Tapani,1,77,skater,C,F,L,L,1993-03-02,Turku,FIN,Finnish,https://assets.leaguestat.com/pwhl/240x240/78.jpg
+79,Maggie,Flaherty,2,19,skater,D,D,L,L,2000-06-02,Lakeville,MN,American,https://assets.leaguestat.com/pwhl/240x240/79.jpg
+80,Ann-Sophie,Bettez,,24,skater,F,F,L,L,1987-11-14,Sept-Îles,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/80.jpg
+81,Sarah,Bujold,,26,skater,F,F,L,L,1996-02-26,Riverview,NB,Canadian,https://assets.leaguestat.com/pwhl/240x240/81.jpg
+82,Dominika,Lásková,3,96,skater,D,D,R,R,1996-12-20,Prague,CZE,Czech,https://assets.leaguestat.com/pwhl/240x240/82.jpg
+83,Erin,Ambrose,3,23,skater,D,D,R,R,1994-04-30,Keswick,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/83.jpg
+84,Kati,Tabin,3,9,skater,D,D,L,L,1997-04-21,Winnipeg,MB,Canadian,https://assets.leaguestat.com/pwhl/240x240/84.jpg
+85,Elaine,Chuli,3,20,goalie,G,G,L,L,1994-05-16,Waterford,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/85.jpg
+86,Emma,Woods,6,67,skater,F,F,R,R,1995-12-18,Burford,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/86.jpg
+87,Jaime,Bourbonnais,4,14,skater,D,D,R,R,1998-09-09,Mississauga,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/87.jpg
+88,Kateřina,Mrázová,5,16,skater,F,F,L,L,1992-10-19,Kolín,CZE,Czech,https://assets.leaguestat.com/pwhl/240x240/88.jpg
+89,Hannah,Miller,6,34,skater,F,F,L,L,1996-02-16,North Vancouver,BC,Chinese,https://assets.leaguestat.com/pwhl/240x240/89.jpg
+90,Natalie,Buchbinder,2,22,skater,D,D,R,,1999-01-22,Fairport,NY,American,https://assets.leaguestat.com/pwhl/240x240/90.jpg
+91,Brooke,Bryant,2,17,skater,F,F,R,,2000-08-22,Linden,CA,American,https://assets.leaguestat.com/pwhl/240x240/91.jpg
+92,Sydney,Brodt,,10,skater,F,F,R,,1998-05-03,North Oaks,MN,American,https://assets.leaguestat.com/pwhl/240x240/92.jpg
+93,Claire,Butorac,,,skater,F,F,R,,1999-09-24,Coon Rapids,MN,American,https://assets.leaguestat.com/pwhl/240x240/93.jpg
+94,Sophia,Kunin,,,skater,F,F,R,,1997-04-03,Wayzata,MN,American,https://assets.leaguestat.com/pwhl/240x240/94.jpg
+95,Denisa,Křížová,,,skater,F,F,L,,1994-11-03,Horní Cerekev,Czechia,Czech,https://assets.leaguestat.com/pwhl/240x240/95.jpg
+96,Brittyn,Fleming,,,skater,F,F,L,,1999-05-24,Oregon,WI,American,https://assets.leaguestat.com/pwhl/240x240/96.jpg
+97,Liz,Schepers,2,21,skater,F,F,L,,1999-02-13,Mound,MN,American,https://assets.leaguestat.com/pwhl/240x240/97.jpg
+98,Maureen,Murphy,3,21,skater,F,F,R,R,1999-12-15,Buffalo,NY,American,https://assets.leaguestat.com/pwhl/240x240/98.jpg
+99,Mariah,Keopple,3,2,skater,D,D,R,R,2000-06-27,Menomonie,WI,American,https://assets.leaguestat.com/pwhl/240x240/99.jpg
+100,Natalie,Spooner,6,24,skater,F,F,R,R,1990-10-17,Scarborough,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/100.jpg
+101,Alexa,Vasko,5,10,skater,F,F,L,R,1999-02-07,St. Catharines,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/101.jpg
+102,Claire,Butorac,2,7,skater,F,F,R,R,1999-09-24,Andover,MN,American,https://assets.leaguestat.com/pwhl/240x240/102.jpg
+103,Sophia,Kunin,,11,skater,F,F,R,R,1997-04-03,Wayzata,MN,American,https://assets.leaguestat.com/pwhl/240x240/103.jpg
+104,Denisa,Křížová,2,41,skater,F,F,L,R,1994-11-03,Horní Cerekev,CZE,Czech,https://assets.leaguestat.com/pwhl/240x240/104.jpg
+105,Brittyn,Fleming,,18,skater,F,F,L,R,1999-05-24,Oregon,Wisconsin,American,https://assets.leaguestat.com/pwhl/240x240/105.jpg
+106,McKenna,Brand,,7,skater,F,F,L,R,1996-05-18,Park Rapids,MN,American,https://assets.leaguestat.com/pwhl/240x240/106.jpg
+107,Sammy,Davis,,20,skater,F,F,L,R,1997-04-23,Pembroke,MA,American,https://assets.leaguestat.com/pwhl/240x240/107.jpg
+108,Samantha,Isbell,5,5,skater,D,D,L,R,1998-02-17,Thunder Bay,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/108.jpg
+109,Gigi,Marvin,,19,skater,F,F,R,R,1987-03-07,Warroad,MN,American,https://assets.leaguestat.com/pwhl/240x240/109.jpg
+110,Amanda,Pelkey,1,16,skater,LW,F,R,R,1993-05-29,Montpelier,VT,American,https://assets.leaguestat.com/pwhl/240x240/110.jpg
+111,Taylor,Wenczkowski,,12,skater,F,F,R,R,1997-09-25,Rochester,NH,American,https://assets.leaguestat.com/pwhl/240x240/111.jpg
+112,Lauren,MacInnis,,22,skater,D,D,R,R,1998-10-19,St. Louis,MO,American,https://assets.leaguestat.com/pwhl/240x240/112.jpg
+113,Cami,Kronish,,35,goalie,G,G,L,L,2000-02-24,New York,NY,American,https://assets.leaguestat.com/pwhl/240x240/113.jpg
+114,Abby,Boreen,3,24,skater,F,F,R,R,2000-04-03,Somerset,WI,American,https://assets.leaguestat.com/pwhl/240x240/114.jpg
+115,Michela,Cava,2,86,skater,F,F,R,R,1994-03-26,Thunder Bay,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/115.jpg
+116,Clair,Degeorge,3,26,skater,F,F,L,R,1999-06-07,Anchorage,AK,American,https://assets.leaguestat.com/pwhl/240x240/116.jpg
+117,Abby,Cook,,18,skater,D,D,R,R,1998-05-12,Kelowna,BC,Canadian,https://assets.leaguestat.com/pwhl/240x240/117.jpg
+118,Emma,Greco,1,25,skater,LD,D,L,R,1995-03-06,Burlington,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/118.jpg
+119,Dominique,Kremer,,36,skater,D,D,R,R,1997-06-09,Napoleonville,LA,American,https://assets.leaguestat.com/pwhl/240x240/119.jpg
+120,Nikki,Nightengale,,5,skater,D,D,L,R,1998-04-05,Bloomington,MN,American,https://assets.leaguestat.com/pwhl/240x240/120.jpg
+121,Lauren,Bench,,33,goalie,G,G,R,L,1997-11-21,Eagan,MN,American,https://assets.leaguestat.com/pwhl/240x240/121.jpg
+122,Amanda,Leveille,,28,goalie,G,G,R,L,1994-06-10,Kingston,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/122.jpg
+123,Maddie,Rooney,2,35,goalie,G,G,R,L,1997-07-07,Andover,MN,American,https://assets.leaguestat.com/pwhl/240x240/123.jpg
+124,Mélodie,Daoust,,,skater,F,F,L,R,1992-01-07,Salaberry-de-Valleyfield,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/124.jpg
+125,Victoria,Bach,5,12,skater,F,F,L,R,1996-07-12,Milton,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/125.jpg
+126,Samantha,Cogan,6,17,skater,F,F,L,R,1997-07-07,Ottawa,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/126.jpg
+127,Jess,Jones,,23,skater,F,F,L,R,1990-08-30,Picton,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/127.jpg
+128,Kaitlin,Willoughby,3,19,skater,F,F,R,R,1995-03-26,Prince Albert,SK,Canadian,https://assets.leaguestat.com/pwhl/240x240/128.jpg
+129,Mellissa,Channell-Watkins,2,23,skater,D,D,L,R,1994-12-16,Plymouth,MI,American,https://assets.leaguestat.com/pwhl/240x240/129.jpg
+130,Emma,Keenan,,21,skater,D,D,L,R,1997-11-26,Calgary,AB,Canadian,https://assets.leaguestat.com/pwhl/240x240/130.jpg
+131,Olivia,Knowles,4,7,skater,D,D,R,R,1999-01-24,Campbell River,BC,Canadian,https://assets.leaguestat.com/pwhl/240x240/131.jpg
+132,Jessica,Kondas,6,2,skater,D,D,R,R,2000-01-03,Calgary,AB,Canadian,https://assets.leaguestat.com/pwhl/240x240/132.jpg
+133,Lauriane,Rougeau,,5,skater,D,D,L,R,1990-04-12,Beaconsfield,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/133.jpg
+134,Carly,Jackson,6,70,goalie,G,G,R,L,1997-06-23,Amherst,NS,Canadian,https://assets.leaguestat.com/pwhl/240x240/134.jpg
+135,Amanda,Mäkelä,,43,goalie,G,G,R,L,1993-12-20,Thunder Bay,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/135.jpg
+136,Rosalie,Demers,,81,skater,F,F,L,R,2000-06-15,Blainville,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/136.jpg
+137,Fanni,Garát-Gasparics,,94,skater,F,F,R,R,1994-11-20,Budapest,Hungary,Hungarian,https://assets.leaguestat.com/pwhl/240x240/137.jpg
+138,Mikyla,Grant-Mentis,3,18,skater,F,F,L,R,1998-07-15,Brampton,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/138.jpg
+139,Liliane,Perreault,,34,skater,F,F,R,R,2000-03-16,Hinsdale,IL,American,https://assets.leaguestat.com/pwhl/240x240/139.jpg
+140,Malia,Schneider,,18,skater,F,F,R,R,1998-10-03,Millarville,AB,Canadian,https://assets.leaguestat.com/pwhl/240x240/140.jpg
+141,Akane,Shiga,,11,skater,F,F,R,R,2001-03-03,Obihiro/Hokkaido,Japan,Japanese,https://assets.leaguestat.com/pwhl/240x240/141.jpg
+142,Natalie,Snodgrass,5,8,skater,F,F,L,R,1998-12-17,Eagan,MN,American,https://assets.leaguestat.com/pwhl/240x240/142.jpg
+143,Taylor,Davison,,20,skater,D,D,L,R,1998-02-18,Oakville,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/143.jpg
+144,Victoria,Howran,,5,skater,D,D,L,R,1998-06-11,Bancroft,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/144.jpg
+145,Rachel,McQuigge,,34,goalie,G,G,L,R,1998-10-08,Bowmanville,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/145.jpg
+146,Alexa,Gruschow,,16,skater,F,F,R,R,1994-04-16,Mechanicsburg,PA,American,https://assets.leaguestat.com/pwhl/240x240/146.jpg
+147,Savannah,Norcross,,71,skater,F,F,R,R,2000-06-10,Lynn,MA,American,https://assets.leaguestat.com/pwhl/240x240/147.jpg
+148,Madison,Packer,,23,skater,F,F,R,R,1991-06-25,Birmingham,MI,American,https://assets.leaguestat.com/pwhl/240x240/148.jpg
+149,Jill,Saulnier,1,44,skater,F,F,L,R,1992-03-07,Halifax,NS,Canadian,https://assets.leaguestat.com/pwhl/240x240/149.jpg
+150,Taylor,Baker,4,4,skater,D,D,R,R,1997-07-30,Toronto,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/150.jpg
+151,Emily,Curlett,,5,skater,D,D,R,R,1999-03-04,Columbiaville,MI,American,https://assets.leaguestat.com/pwhl/240x240/151.jpg
+152,Johanna,Fällman,,59,skater,D,D,L,R,1990-06-21,Lulea,Sweden,Swedish,https://assets.leaguestat.com/pwhl/240x240/152.jpg
+153,Carley,Olivier,,74,skater,D,D,R,R,1999-05-13,Sudbury,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/153.jpg
+154,Lindsey,Post,,33,goalie,G,G,R,L,1994-01-11,Chelsea,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/154.jpg
+155,Corinne,Schroeder,4,30,goalie,G,G,R,L,1999-08-17,Elm Creek,MB,Canadian,https://assets.leaguestat.com/pwhl/240x240/155.jpg
+156,Gabrielle,David,3,8,skater,F,F,R,R,1999-06-22,Drummondville,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/156.jpg
+157,Catherine,Dubois,3,28,skater,F,F,L,R,1995-07-29,Charlesbourg,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/157.jpg
+158,Sarah,Lefort,,16,skater,F,F,L,R,1994-02-09,Ormstown,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/158.jpg
+159,Leah,Lum,,12,skater,F,F,L,R,1996-05-12,Richmond,BC,Chinese,https://assets.leaguestat.com/pwhl/240x240/159.jpg
+160,Alexandra,Poznikoff,,17,skater,F,F,R,R,1997-05-16,Edmonton,AB,Canadian,https://assets.leaguestat.com/pwhl/240x240/160.jpg
+161,Tereza,Vanišová,5,13,skater,F,F,L,R,1996-01-30,Strakonice,CZE,Czech,https://assets.leaguestat.com/pwhl/240x240/161.jpg
+162,Madison,Bizal,,6,skater,D,D,L,R,2000-01-25,Elk River,MN,American,https://assets.leaguestat.com/pwhl/240x240/162.jpg
+163,Catherine,Daoust,3,4,skater,D,D,R,R,1995-02-21,L’Île-Bizard,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/163.jpg
+164,Brigitte,Laganière,,10,skater,D,D,L,R,1996-08-01,Montréal,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/164.jpg
+165,Maude,Poulin-Labelle,,76,skater,D,D,L,R,1999-11-23,Sherbrooke,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/165.jpg
+166,Marlène,Boissonnault,2,33,goalie,G,G,L,L,1997-06-19,Dundee,NB,Canadian,https://assets.leaguestat.com/pwhl/240x240/166.jpg
+167,Sidney,Morin,1,7,skater,RD,D,R,R,1995-06-06,Minnetonka,MN,American,https://assets.leaguestat.com/pwhl/240x240/167.jpg
+168,Mélodie,Daoust,,25,skater,F,F,L,R,1992-01-07,Valleyfield,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/168.jpg
+169,Claire,Thompson,2,42,skater,D,D,L,L,1998-01-28,Toronto,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/169.jpg
+170,Rachel,Flanagan,,0,skater,D,D,R,R,1979-04-30,Guelph,ON,Canadian,
+171,Mike,Ellis,,0,skater,D,D,R,R,,,,,
+172,Stefanie,Thomson,,0,skater,D,D,R,R,1992-01-01,Oshawa,ON,Canadian,
+173,Brad,Kirkwood,,0,skater,D,D,R,R,,Red Deer,AB,Canadian,
+174,Jordan,Colliton,,0,skater,D,D,R,R,,Blackie,AB,Canadian,
+175,Kelly,Babstock,1,8,skater,RW,F,R,R,1992-08-04,Mississauga,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/175.jpg
+176,Caitrin,Lonergan,,14,skater,F,F,R,R,1997-09-10,Roslindale,MA,American,
+177,Brooke,Stacey,,3,skater,F,F,L,R,1996-06-26,Kahnawake,QC,Canadian,
+178,Audrey-Ann,Veilette,,95,skater,F,F,R,R,2000-12-03,Drummondville,QC,Canadian,
+179,Melissa,Channell,,,skater,D,D,R,R,,Oakville,ON,Canadian,
+180,Sydney,Bard,1,15,skater,RD,D,R,,2001-01-15,New Hartford,NY,American,https://assets.leaguestat.com/pwhl/240x240/180.jpg
+181,Hannah,Bilka,1,19,skater,LW,F,L,,2001-03-24,Coppell,TX,American,https://assets.leaguestat.com/pwhl/240x240/181.jpg
+182,Hadley,Hartmetz,1,6,skater,RD,D,R,,2001-03-25,Phoenixville,PA,American,https://assets.leaguestat.com/pwhl/240x240/182.jpg
+183,Shay,Maloney,1,27,skater,C,F,R,,1999-08-31,McHenry,IL,American,https://assets.leaguestat.com/pwhl/240x240/183.jpg
+184,Ilona,Markova,,18,skater,F,F,L,,2002-01-18,Kirov,RUS,Russian,https://assets.leaguestat.com/pwhl/240x240/184.jpg
+185,Daniela,Pejsova,1,55,skater,LD,D,L,,2002-08-14,Teplice,CZE,Czech,https://assets.leaguestat.com/pwhl/240x240/185.jpg
+186,Klara,Peslarova,1,29,goalie,G,G,,L,1996-11-23,Ostrava,CZE,Czech,https://assets.leaguestat.com/pwhl/240x240/186.jpg
+187,Charlotte,Akervik,2,8,skater,D,D,R,,2001-02-17,Eau Claire,WI,American,https://assets.leaguestat.com/pwhl/240x240/187.jpg
+188,Mae,Batherson,2,9,skater,D,D,L,,2000-12-05,New Minas,NS,Canadian,https://assets.leaguestat.com/pwhl/240x240/188.jpg
+189,Britta,Curl-Salemme,2,77,skater,F,F,L,,2000-03-20,Bismarck,ND,American,https://assets.leaguestat.com/pwhl/240x240/189.jpg
+190,Klara,Hymlarova,2,71,skater,F,F,L,,1999-02-27,Opava,CZE,Czech,https://assets.leaguestat.com/pwhl/240x240/190.jpg
+191,Katy,Knoll,2,6,skater,F,F,R,,2001-01-16,Amherst,NY,American,https://assets.leaguestat.com/pwhl/240x240/191.jpg
+192,Brooke,McQuigge,2,3,skater,F,F,L,,2000-06-09,Bowmanville,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/192.jpg
+193,Lucy,Morgan,5,32,goalie,G,G,,R,2001-08-18,Mandan,ND,American,https://assets.leaguestat.com/pwhl/240x240/193.jpg
+194,Kaitlyn,O'Donohoe,2,11,skater,F,F,R,,2001-09-20,Atlanta,GA,American,https://assets.leaguestat.com/pwhl/240x240/194.jpg
+195,Dominique,Petrie,2,14,skater,F,F,R,,2001-01-21,Hermosa Beach,CA,American,https://assets.leaguestat.com/pwhl/240x240/195.jpg
+196,Cayla,Barnes,3,3,skater,D,D,R,,1999-01-07,Corona,CA,American,https://assets.leaguestat.com/pwhl/240x240/196.jpg
+197,Tricia,Deguire,3,1,goalie,G,G,,L,1997-09-14,Sherbrooke,QC,Canadian,
+198,Jennifer,Gardiner,3,12,skater,F,F,L,,2001-09-18,Surrey,BC,Canadian,https://assets.leaguestat.com/pwhl/240x240/198.jpg
+199,Dara,Greig,3,17,skater,F,F,L,,2000-12-30,Camden,NJ,American,https://assets.leaguestat.com/pwhl/240x240/199.jpg
+200,Anna,Kjellbin,6,71,skater,D,D,R,,1994-03-16,Göteberg,SWE,Swedish,https://assets.leaguestat.com/pwhl/240x240/200.jpg
+201,Lina,Ljungblom,3,25,skater,F,F,L,,2001-10-15,Skövde,SWE,Swedish,https://assets.leaguestat.com/pwhl/240x240/201.jpg
+202,Kelly Ann,Nadeau,3,51,skater,D,D,R,,1998-03-30,Mont-Laurier,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/202.jpg
+203,Anna,Wilgren,3,5,skater,D,D,L,,1999-11-10,Hudson,WI,American,https://assets.leaguestat.com/pwhl/240x240/203.jpg
+204,Emmy,Fecteau,4,29,skater,F,F,L,,1999-04-07,Saint-Odilon-de-Cranbourn,QC,Canadian,https://assets.leaguestat.com/pwhl/240x240/204.jpg
+205,Sarah,Fillier,4,10,skater,F,F,R,,2000-06-09,Georgetown,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/205.jpg
+206,Elle,Hartje,4,13,skater,F,F,L,,2001-04-13,Detroit,MI,American,https://assets.leaguestat.com/pwhl/240x240/206.jpg
+207,Lauren,Bernard,4,16,skater,D,D,L,,2001-07-15,Madison,OH,American,https://assets.leaguestat.com/pwhl/240x240/207.jpg
+208,Megan,Carter,6,23,skater,D,D,L,,2001-05-23,Milton,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/208.jpg
+209,Izzy,Daniel,6,8,skater,F,F,R,,2000-09-29,Minneapolis,MN,American,https://assets.leaguestat.com/pwhl/240x240/209.jpg
+210,Julia,Gosling,6,88,skater,F,F,L,,2001-02-21,London,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/210.jpg
+211,Raygan,Kirk,6,1,goalie,G,G,,L,2001-03-11,Ste. Anne,MB,Canadian,https://assets.leaguestat.com/pwhl/240x240/211.jpg
+212,Laura,Kluge,6,25,skater,F,F,L,,1996-11-06,Berlin,GER,German,https://assets.leaguestat.com/pwhl/240x240/212.jpg
+213,Anneke,Rankila,6,13,skater,F,F,R,,1999-11-10,Lino Lakes,MN,American,https://assets.leaguestat.com/pwhl/240x240/213.jpg
+214,Noemi,Neubauerová,6,61,skater,F,F,R,,1999-12-15,Prague,CZE,Czech,https://assets.leaguestat.com/pwhl/240x240/214.jpg
+215,Jessica,Adolfsson,5,9,skater,D,D,L,,1998-07-15,Linköping,SWE,Swedish,https://assets.leaguestat.com/pwhl/240x240/215.jpg
+216,Logan,Angers,5,35,goalie,G,G,,R,2000-01-07,Winnipeg,MB,Canadian,https://assets.leaguestat.com/pwhl/240x240/216.jpg
+217,Taylor,House,5,22,skater,F,F,L,,1998-09-29,Joliet,IL,American,https://assets.leaguestat.com/pwhl/240x240/217.jpg
+218,Alexandra,Lehmann,,40,goalie,G,G,,L,2000-02-21,Cecil Lake,BC,Canadian,
+219,Stephanie,Markowski,5,6,skater,D,D,R,,2001-08-24,Edmonton,AB,Canadian,https://assets.leaguestat.com/pwhl/240x240/219.jpg
+220,Mannon,McMahon,5,18,skater,F,F,R,,2001-07-29,Maple Grove,MN,American,https://assets.leaguestat.com/pwhl/240x240/220.jpg
+221,Anna,Meixner,5,94,skater,F,F,L,,1994-06-16,Zell Am See,AUT,Austrian,https://assets.leaguestat.com/pwhl/240x240/221.jpg
+222,Gwyneth,Philips,5,33,goalie,G,G,,R,2000-09-17,Athens,OH,American,https://assets.leaguestat.com/pwhl/240x240/222.jpg
+223,Ronja,Savolainen,5,88,skater,D,D,L,,1997-11-29,Helsinki,FIN,Finnish,https://assets.leaguestat.com/pwhl/240x240/223.jpg
+224,Danielle,Serdachny,5,92,skater,F,F,R,,2001-05-12,Edmonton,AB,Canadian,https://assets.leaguestat.com/pwhl/240x240/224.jpg
+225,Audrey-Anne,Veillette,,44,skater,F,F,R,,2000-12-03,Drummondville,QC,Canadian,
+226,Madeline,Wethington,,4,skater,D,D,L,,2000-07-14,Edina,MN,American,
+227,Gabby,Rosenthal,4,15,skater,F,F,R,,1999-09-13,Blaine,MN,American,https://assets.leaguestat.com/pwhl/240x240/227.jpg
+228,Kayle,Osborne,4,82,goalie,G,G,,L,2002-02-28,Westport,ON,Canadian,https://assets.leaguestat.com/pwhl/240x240/228.jpg
+229,Maja,Nylen Persson,4,8,skater,D,D,R,,2000-10-31,Skogsbo,SWE,Swedish,https://assets.leaguestat.com/pwhl/240x240/229.jpg
+230,Allyson,Simpson,4,20,skater,D,D,R,,2000-12-20,Frisco,TX,American,https://assets.leaguestat.com/pwhl/240x240/230.jpg
+231,Noora,Tulus,4,40,skater,F,F,R,,1995-08-15,Vantaa,FIN,Finnish,https://assets.leaguestat.com/pwhl/240x240/231.jpg
+232,Rylind,MacKinnon,6,55,skater,D,D,L,L,2000-03-05,Cranbrook,BC,Canadian,https://assets.leaguestat.com/pwhl/240x240/232.jpg
+233,Alexie,Guay,4,0,skater,D,D,L,L,2001-01-08,,,Canadian,
+234,Kassidy,Sauvé,6,0,goalie,G,,,L,1996-05-19,,,,

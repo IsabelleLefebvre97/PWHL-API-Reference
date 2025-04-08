@@ -1,0 +1,191 @@
+id,season_id,game_number,date,home_team,visiting_team,home_goal_count,visiting_goal_count,periods,overtime,shootout,status,game_status,venue_name,venue_location,attendance
+2,1,1,2024-01-01T12:30:00-05:00,6,4,0,4,3,0,0,4,Final,Mattamy Athletic Centre,"Toronto, Ontario",2537
+3,1,2,2024-01-02T19:00:00-05:00,5,3,2,3,4,1,0,4,Final OT,TD Place,"Ottawa, Ontario",8318
+4,1,3,2024-01-03T19:00:00-05:00,1,2,2,3,3,0,0,4,Final,Tsongas Center,"Lowell, Massachusetts",4012
+5,1,4,2024-01-05T19:00:00-05:00,4,6,2,3,3,0,0,4,Final,Total Mortgage Arena,"Bridgeport, Connecticut",2152
+6,1,5,2024-01-06T14:30:00-06:00,2,3,3,0,3,0,0,4,Final,Xcel Energy Center,"Saint Paul, Minnesota",13316
+8,1,7,2024-01-10T19:00:00-06:00,2,6,3,1,3,0,0,4,Final,Xcel Energy Center,"Saint Paul, Minnesota",4707
+9,1,8,2024-01-10T19:00:00-05:00,4,3,2,5,3,0,0,4,Final,UBS Arena,"Elmont, New York",2201
+10,1,9,2024-01-13T13:00:00-05:00,6,5,1,5,3,0,0,4,Final,Mattamy Athletic Centre,"Toronto, Ontario",2417
+11,1,10,2024-01-13T15:30:00-05:00,3,1,2,3,4,1,0,4,Final OT,Verdun Auditorium,"Montréal, Québec",3245
+12,1,11,2024-01-14T15:00:00-06:00,2,4,2,3,4,1,0,4,Final OT,Xcel Energy Center,"Saint Paul, Minnesota",7951
+13,1,12,2024-01-16T19:00:00-05:00,3,4,3,2,3,0,0,4,Final,Place Bell,"Laval, Québec",6334
+14,1,13,2024-01-17T19:00:00-05:00,6,1,2,3,3,0,0,4,Final,Mattamy Athletic Centre,"Toronto, Ontario",2491
+15,1,14,2024-01-17T19:00:00-05:00,5,2,2,3,4,1,0,4,Final OT,TD Place,"Ottawa, Ontario",5609
+16,1,15,2024-01-20T12:30:00-05:00,1,4,1,4,3,0,0,4,Final,Tsongas Center,"Lowell, Massachusetts",4007
+17,1,16,2024-01-20T20:00:00-05:00,3,6,3,4,4,1,0,4,Final SO,Verdun Auditorium,"Montréal, Québec",3232
+18,1,17,2024-01-23T19:00:00-05:00,5,6,3,1,3,0,0,4,Final,TD Place,"Ottawa, Ontario",6316
+19,1,19,2024-01-24T19:00:00-05:00,5,1,2,3,3,0,0,4,Final,TD Place,"Ottawa, Ontario",5208
+20,1,18,2024-01-24T19:00:00-06:00,2,3,1,2,3,0,0,4,Final,Xcel Energy Center,"Saint Paul, Minnesota",5001
+21,1,20,2024-01-26T19:00:00-05:00,6,4,2,0,3,0,0,4,Final,Mattamy Athletic Centre,"Toronto, Ontario",2506
+22,1,21,2024-01-27T15:30:00-05:00,3,5,2,1,4,1,0,4,Final OT,Place Bell,"Laval, Québec",8646
+23,1,22,2024-01-27T16:00:00-05:00,1,2,4,3,4,1,0,4,Final OT,Tsongas Center,"Lowell, Massachusetts",4059
+24,1,23,2024-01-28T13:00:00-05:00,4,2,1,2,4,1,0,4,Final OT,Total Mortgage Arena,"Bridgeport, Connecticut",2393
+25,1,24,2024-02-03T12:00:00-05:00,6,2,4,1,3,0,0,4,Final,Mattamy Athletic Centre,"Toronto, Ontario",2470
+26,1,25,2024-02-04T13:00:00-05:00,5,4,3,4,4,1,0,4,Final OT,TD Place,"Ottawa, Ontario",8062
+27,1,26,2024-02-04T15:30:00-05:00,1,3,1,2,4,1,0,4,Final OT,Tsongas Center,"Lowell, Massachusetts",4210
+28,1,27,2024-02-14T19:00:00-06:00,2,5,2,1,3,0,0,4,Final,Xcel Energy Center,"Saint Paul, Minnesota",6276
+29,1,28,2024-02-14T19:00:00-05:00,1,6,3,5,3,0,0,4,Final,Tsongas Center,"Lowell, Massachusetts",1791
+30,1,29,2024-02-16T19:00:00-05:00,6,3,3,0,3,0,0,4,Final,Scotiabank Arena,"Toronto, Ontario",19285
+31,1,30,2024-02-17T14:00:00-05:00,5,2,1,2,3,0,0,4,Final,TD Place,"Ottawa, Ontario",8407
+32,1,31,2024-02-17T16:00:00-05:00,1,4,1,2,4,1,0,4,Final OT,Tsongas Center,"Lowell, Massachusetts",4002
+33,1,32,2024-02-18T13:00:00-05:00,3,2,2,1,3,0,0,4,Final,Place Bell,"Laval, Québec",10172
+34,1,33,2024-02-21T19:00:00-05:00,1,5,3,1,3,0,0,4,Final,Tsongas Center,"Lowell, Massachusetts",1889
+35,1,34,2024-02-21T19:00:00-05:00,4,3,3,2,4,1,1,4,Final SO,UBS Arena,"Elmont, New York",2128
+36,1,35,2024-02-23T19:00:00-05:00,6,4,2,1,4,1,1,4,Final SO,Mattamy Athletic Centre,"Toronto, Ontario",2494
+37,1,36,2024-02-24T14:30:00-05:00,3,5,6,3,3,0,0,4,Final,Verdun Auditorium,"Montréal, Québec",3232
+38,1,37,2024-02-25T15:00:00-06:00,2,1,0,2,3,0,0,4,Final,Xcel Energy Center,"Saint Paul, Minnesota",10186
+39,1,38,2024-02-28T19:00:00-05:00,5,4,4,2,3,0,0,4,Final,TD Place,"Ottawa, Ontario",6889
+40,1,39,2024-02-27T19:00:00-06:00,2,6,3,4,4,1,0,4,Final OT,3M Arena at Mariucci,"Minneapolis, MN",2718
+41,1,40,2024-03-02T15:30:00-05:00,5,6,2,5,3,0,0,4,Final,TD Place,"Ottawa, Ontario",8447
+42,1,41,2024-03-02T16:00:00-05:00,3,1,3,1,3,0,0,4,Final,Verdun Auditorium,"Montréal, Québec",3232
+43,1,42,2024-03-03T12:30:00-05:00,4,2,0,2,3,0,0,4,Final,UBS Arena,"Elmont, New York",4459
+44,1,43,2024-03-05T19:00:00-06:00,2,5,4,3,4,1,1,4,Final SO,Xcel Energy Center,"Saint Paul, Minnesota",4585
+45,1,44,2024-03-06T19:00:00-05:00,6,1,3,1,3,0,0,4,Final,Mattamy Athletic Centre,"Toronto, Ontario",2479
+46,1,45,2024-03-06T19:00:00-05:00,4,3,3,4,3,0,0,4,Final,Total Mortgage Arena,"Bridgeport, Connecticut",728
+47,1,46,2024-03-08T19:00:00-05:00,6,3,3,0,3,0,0,4,Final,Mattamy Athletic Centre,"Toronto, Ontario",2554
+48,1,47,2024-03-10T15:00:00-04:00,1,4,3,2,4,1,0,4,Final OT,Tsongas Center,"Lowell, Massachusetts",4607
+49,1,48,2024-03-10T16:00:00-04:00,3,5,2,4,3,0,0,4,Final,Place Bell,"Laval, Québec",10172
+50,1,49,2024-03-13T19:00:00-05:00,2,1,4,0,3,0,0,4,Final,Xcel Energy Center,"Saint Paul, Minnesota",4669
+51,1,50,2024-03-16T14:30:00-05:00,2,4,5,1,3,0,0,4,Final,Xcel Energy Center,"Saint Paul, Minnesota",9006
+52,1,53,2024-03-20T19:00:00-04:00,6,1,2,1,3,0,0,4,Final,Mattamy Athletic Centre,"Toronto, Ontario",2525
+53,1,54,2024-03-20T19:00:00-04:00,4,5,0,3,3,0,0,4,Final,Total Mortgage Arena,"Bridgeport, Connecticut",1702
+54,1,55,2024-03-23T13:00:00-04:00,5,6,5,3,3,0,0,4,Final,TD Place,"Ottawa, Ontario",8448
+55,1,56,2024-03-24T15:00:00-05:00,2,3,3,2,4,1,1,4,Final SO,Xcel Energy Center,"Saint Paul, Minnesota",7268
+56,1,57,2024-03-25T19:00:00-04:00,4,1,3,2,3,0,0,4,Final,UBS Arena,"Elmont, New York",2834
+57,1,58,2024-04-18T19:00:00-04:00,1,6,2,1,3,0,0,4,Final,Tsongas Center,"Lowell, Massachusetts",4084
+58,1,59,2024-04-18T19:00:00-04:00,3,2,4,3,3,0,0,4,Final,Verdun Auditorium,"Montréal, Québec",3084
+59,1,60,2024-04-20T19:00:00-04:00,5,2,4,0,3,0,0,4,Final,TD Place,"Ottawa, Ontario",8110
+60,1,64,2024-04-24T19:00:00-04:00,3,4,5,2,3,0,0,4,Final,Verdun Auditorium,"Montréal, Québec",3232
+61,1,65,2024-04-28T13:00:00-04:00,4,6,2,6,3,0,0,4,Final,UBS Arena,"Elmont, New York",1668
+62,1,67,2024-04-27T12:30:00-04:00,5,3,0,2,3,0,0,4,Final,TD Place,"Ottawa, Ontario",8452
+63,1,69,2024-05-01T19:00:00-04:00,6,2,4,1,3,0,0,4,Final,Mattamy Athletic Centre,"Toronto, Ontario",2571
+64,1,70,2024-05-04T15:30:00-04:00,1,3,4,3,3,0,0,4,Final,Tsongas Center,"Lowell, Massachusetts",5964
+65,1,51,2024-03-16T18:00:00-04:00,1,5,2,1,4,1,1,4,Final SO,Little Caesars Arena,"Detroit, Michigan",13736
+66,1,52,2024-03-17T12:30:00-04:00,3,6,1,2,3,0,0,4,Final,PPG Paints Arena,"Pittsburgh, Pennsylvania",8850
+67,1,61,2024-04-20T13:00:00-04:00,3,6,2,3,4,1,0,4,Final OT,Bell Centre,"Montréal, QC",21105
+68,1,62,2024-04-20T15:30:00-04:00,4,1,1,2,3,0,0,4,Final,Prudential Center,"Newark, NJ",5132
+69,1,63,2024-04-24T19:00:00-04:00,5,1,3,2,4,1,1,4,Final SO,TD Place,"Ottawa, Ontario",7686
+70,1,66,2024-04-27T13:00:00-05:00,2,1,1,2,3,0,0,4,Final,Xcel Energy Center,"Saint Paul, Minnesota",9977
+71,1,68,2024-04-30T19:00:00-04:00,4,5,4,3,3,0,0,4,Final,Prudential Center,"Newark, NJ",2992
+72,1,71,2024-05-05T19:00:00-04:00,6,5,5,2,3,0,0,4,Final,Mattamy Athletic Centre,"Toronto, Ontario",2620
+73,1,72,2024-05-04T13:00:00-04:00,4,2,5,2,3,0,0,4,Final,UBS Arena,"Elmont, New York",1563
+74,2,1,2023-12-04T13:00:00-05:00,1,6,2,5,4,1,0,4,Final OT,Utica University Nexus Center - Mastrovito Hyundai,"Utica, NY",0
+75,2,2,2023-12-04T16:15:00-05:00,2,5,8,4,4,1,1,4,Final SO,Utica University Nexus Center - Mastrovito Hyundai,"Utica, NY",0
+76,2,3,2023-12-04T19:30:00-05:00,4,3,4,0,4,1,1,4,Final SO,Utica University Nexus Center - Mastrovito Hyundai,"Utica, NY",0
+77,2,4,2023-12-05T12:00:00-05:00,6,2,4,5,4,1,0,4,Final OT,Utica University Nexus Center - Mastrovito Hyundai,"Utica, NY",0
+78,2,5,2023-12-05T15:15:00-05:00,3,1,3,1,4,1,0,4,Final OT,Utica University Nexus Center - Mastrovito Hyundai,"Utica, NY",0
+79,2,6,2023-12-05T19:30:00-05:00,5,4,1,2,4,1,0,4,Final SO,Utica University Nexus Center - Mastrovito Hyundai,"Utica, NY",0
+80,2,7,2023-12-07T09:00:00-05:00,2,3,4,3,3,0,0,4,Final,Utica University Nexus Center - Mastrovito Hyundai,"Utica, NY",0
+81,2,8,2023-12-07T12:15:00-05:00,6,4,4,6,4,1,0,4,Final OT,Utica University Nexus Center - Mastrovito Hyundai,"Utica, NY",0
+82,2,9,2023-12-07T15:30:00-05:00,1,5,3,1,4,1,0,4,Final OT,Utica University Nexus Center - Mastrovito Hyundai,"Utica, NY",0
+83,1,6,2024-02-19T16:30:00-05:00,1,5,2,4,3,0,0,4,Final,Tsongas Center,"Lowell, Massachusetts",2849
+84,3,1,2024-05-08T19:00:00-04:00,6,2,4,0,3,0,0,4,Final,Coca-Cola Coliseum,"Toronto, ON",8473
+85,3,2,2024-05-09T19:00:00-04:00,3,1,1,2,4,1,0,4,Final OT,Place Bell,"Laval, Québec",9135
+86,3,3,2024-05-10T19:00:00-04:00,6,2,2,0,3,0,0,4,Final,Coca-Cola Coliseum,"Toronto, ON",8581
+87,3,4,2024-05-11T19:00:00-04:00,3,1,1,2,6,1,0,4,Final OT3,Place Bell,"Laval, Québec",10172
+88,3,5,2024-05-13T20:00:00-04:00,2,6,2,0,3,0,0,4,Final,Xcel Energy Center,"Saint Paul, Minnesota",3344
+89,3,6,2024-05-14T19:00:00-04:00,1,3,3,2,4,1,0,4,Final OT,Tsongas Center,"Lowell, Massachusetts",2781
+90,3,7,2024-05-15T20:00:00-04:00,2,6,1,0,5,1,0,4,Final OT2,Xcel Energy Center,"Saint Paul, Minnesota",2766
+92,3,9,2024-05-17T19:00:00-04:00,6,2,1,4,3,0,0,4,Final,Coca-Cola Coliseum,"Toronto, ON",8501
+94,3,11,2024-05-19T17:00:00-04:00,1,2,4,3,3,0,0,4,Final,Tsongas Center,"Lowell, Massachusetts",4508
+95,3,12,2024-05-21T19:00:00-04:00,1,2,0,3,3,0,0,4,Final,Tsongas Center,"Lowell, Massachusetts",4543
+96,3,13,2024-05-24T18:00:00-05:00,2,1,4,1,3,0,0,4,Final,Xcel Energy Center,"Saint Paul, Minnesota",9054
+97,3,14,2024-05-26T17:00:00-05:00,2,1,0,1,5,1,0,4,Final OT2,Xcel Energy Center,"Saint Paul, Minnesota",13104
+98,3,15,2024-05-29T19:00:00-04:00,1,2,0,3,3,0,0,4,Final,Tsongas Center,"Lowell, Massachusetts",6309
+99,4,1,2024-11-20T14:00:00-05:00,1,3,3,1,3,0,0,4,Final,Verdun Auditorium,"Montréal, Québec",0
+100,4,2,2024-11-20T14:15:00-05:00,2,6,3,1,3,0,0,4,Final,Ford Performance Centre,"Toronto, ON",0
+101,4,3,2024-11-21T14:00:00-05:00,5,1,6,1,3,0,0,4,Final,Verdun Auditorium,"Montréal, Québec",0
+102,4,4,2024-11-21T14:30:00-05:00,4,2,3,4,4,1,0,4,Final OT,Ford Performance Centre,"Toronto, ON",0
+103,4,5,2024-11-22T14:00:00-05:00,3,5,6,3,3,0,0,4,Final,Verdun Auditorium,"Montréal, Québec",0
+104,4,6,2024-11-22T14:30:00-05:00,6,4,2,5,3,0,0,4,Final,Ford Performance Centre,"Toronto, ON",0
+105,5,1,2024-11-30T14:00:00-05:00,6,1,3,1,3,0,0,4,Final,Coca-Cola Coliseum,"Toronto, ON",8089
+106,5,2,2024-11-30T17:00:00-05:00,3,5,4,3,4,1,1,4,Final SO,Place Bell,"Laval, Québec",10033
+107,5,3,2024-12-01T17:00:00-06:00,2,4,3,4,4,1,0,4,Final OT,Xcel Energy Center,"Saint Paul, Minnesota",8022
+108,5,4,2024-12-03T19:00:00-05:00,5,6,3,2,3,0,0,4,Final,TD Place,"Ottawa, Ontario",6451
+109,5,5,2024-12-04T19:00:00-05:00,1,2,1,2,3,0,0,4,Final,Tsongas Center,"Lowell, Massachusetts",3811
+110,5,6,2024-12-04T19:00:00-05:00,3,4,1,4,3,0,0,4,Final,Place Bell,"Laval, Québec",5415
+111,5,8,2024-12-07T14:00:00-05:00,6,2,3,6,3,0,0,4,Final,Coca-Cola Coliseum,"Toronto, ON",7584
+112,5,9,2024-12-08T16:00:00-05:00,1,4,4,2,3,0,0,4,Final,Tsongas Center,"Lowell, Massachusetts",4003
+113,5,10,2024-12-17T19:00:00-05:00,1,5,3,2,3,0,0,4,Final,Tsongas Center,"Lowell, Massachusetts",2854
+114,5,11,2024-12-18T19:00:00-05:00,4,6,4,2,3,0,0,4,Final,Prudential Center,"Newark, NJ",2851
+115,5,12,2024-12-19T19:00:00-06:00,2,5,5,2,3,0,0,4,Final,Xcel Energy Center,"Saint Paul, Minnesota",4686
+116,5,13,2024-12-21T14:00:00-05:00,6,3,3,4,4,1,0,4,Final OT,Coca-Cola Coliseum,"Toronto, ON",8251
+117,5,14,2024-12-22T12:00:00-05:00,4,2,3,4,4,1,0,4,Final SO,Prudential Center,"Newark, NJ",2722
+118,5,15,2024-12-27T19:00:00-05:00,6,1,4,2,3,0,0,4,Final,Coca-Cola Coliseum,"Toronto, ON",8264
+119,5,16,2024-12-28T13:00:00-06:00,2,3,2,3,3,0,0,4,Final,Xcel Energy Center,"Saint Paul, Minnesota",8726
+120,5,17,2024-12-29T13:00:00-05:00,4,5,1,3,3,0,0,4,Final,Prudential Center,"Newark, NJ",2946
+121,5,18,2024-12-30T19:00:00-05:00,3,1,3,1,3,0,0,4,Final,Place Bell,"Laval, Québec",10172
+122,5,19,2024-12-31T19:00:00-05:00,6,5,1,2,3,0,0,4,Final,Coca-Cola Coliseum,"Toronto, ON",8278
+123,5,20,2025-01-02T18:30:00-06:00,2,1,4,3,4,1,0,4,Final OT,Xcel Energy Center,"Saint Paul, Minnesota",5066
+124,5,21,2025-01-04T13:00:00-06:00,2,4,0,5,3,0,0,4,Final,Xcel Energy Center,"Saint Paul, Minnesota",6414
+125,5,23,2025-01-07T19:00:00-05:00,4,5,2,3,3,0,0,4,Final,Prudential Center,"Newark, NJ",1569
+126,5,24,2025-01-08T18:30:00-06:00,2,1,2,1,4,1,0,4,Final OT,Xcel Energy Center,"Saint Paul, Minnesota",4248
+127,5,26,2025-01-11T14:00:00-05:00,5,1,1,2,4,1,0,4,Final OT,TD Place,"Ottawa, Ontario",8295
+128,5,27,2025-01-12T12:00:00-05:00,4,6,1,0,4,1,0,4,Final OT,Prudential Center,"Newark, NJ",3258
+129,5,29,2025-01-14T19:00:00-05:00,5,6,2,4,3,0,0,4,Final,TD Place,"Ottawa, Ontario",6526
+130,5,30,2025-01-15T19:00:00-05:00,4,2,3,2,4,1,1,4,Final SO,Prudential Center,"Newark, NJ",1780
+131,5,31,2025-01-17T19:00:00-05:00,3,2,4,2,3,0,0,4,Final,Place Bell,"Laval, Québec",10172
+132,5,33,2025-01-21T18:00:00-06:00,2,5,0,1,3,0,0,4,Final,Xcel Energy Center,"Saint Paul, Minnesota",4165
+133,5,34,2025-01-22T19:00:00-05:00,1,6,4,1,3,0,0,4,Final,Tsongas Center,"Lowell, Massachusetts",3951
+134,5,36,2025-01-26T14:00:00-06:00,2,1,5,2,3,0,0,4,Final,Xcel Energy Center,"Saint Paul, Minnesota",7838
+135,5,37,2025-01-27T19:00:00-05:00,5,4,0,3,3,0,0,4,Final,TD Place,"Ottawa, Ontario",5629
+136,5,38,2025-01-28T18:00:00-06:00,2,6,4,3,4,1,1,4,Final SO,Xcel Energy Center,"Saint Paul, Minnesota",4540
+137,5,39,2025-01-29T19:00:00-05:00,3,5,4,1,3,0,0,4,Final,Place Bell,"Laval, Québec",6150
+138,5,40,2025-01-30T19:00:00-05:00,3,6,4,3,4,1,1,4,Final SO,Place Bell,"Laval, Québec",7242
+139,5,41,2025-01-31T19:00:00-05:00,1,4,3,2,4,1,1,4,Final SO,Tsongas Center,"Lowell, Massachusetts",5912
+140,5,42,2025-02-01T14:00:00-05:00,6,5,4,2,3,0,0,4,Final,Coca-Cola Coliseum,"Toronto, ON",8351
+141,5,43,2025-02-02T13:00:00-05:00,4,3,1,2,3,0,0,4,Final,Prudential Center,"Newark, NJ",4346
+142,5,44,2025-02-11T19:00:00-05:00,6,2,3,2,4,1,0,4,Final OT,Coca-Cola Coliseum,"Toronto, ON",8183
+143,5,45,2025-02-12T19:00:00-05:00,4,1,0,4,3,0,0,4,Final,Prudential Center,"Newark, NJ",1729
+144,5,46,2025-02-13T19:00:00-05:00,5,2,8,3,3,0,0,4,Final,TD Place,"Ottawa, Ontario",5854
+145,5,47,2025-02-14T19:00:00-05:00,6,1,3,1,3,0,0,4,Final,Coca-Cola Coliseum,"Toronto, ON",8124
+146,5,48,2025-02-15T14:00:00-05:00,3,4,6,2,3,0,0,4,Final,Place Bell,"Laval, Québec",10172
+147,5,49,2025-02-16T13:00:00-05:00,1,2,4,2,3,0,0,4,Final,Tsongas Center,"Lowell, Massachusetts",6032
+148,5,51,2025-02-17T16:00:00-05:00,4,1,1,4,3,0,0,4,Final,Prudential Center,"Newark, NJ",3715
+149,5,52,2025-02-18T19:00:00-05:00,3,2,0,4,3,0,0,4,Final,Place Bell,"Laval, Québec",6696
+150,5,53,2025-02-19T19:00:00-05:00,4,6,1,4,3,0,0,4,Final,Prudential Center,"Newark, NJ",1569
+151,5,54,2025-02-20T19:00:00-05:00,5,1,2,3,4,1,0,4,Final OT,TD Place,"Ottawa, Ontario",5458
+152,5,55,2025-02-22T14:00:00-05:00,5,3,3,1,3,0,0,4,Final,TD Place,"Ottawa, Ontario",8424
+153,5,56,2025-02-23T12:30:00-06:00,2,6,1,2,3,0,0,4,Final,Xcel Energy Center,"Saint Paul, Minnesota",8770
+154,5,58,2025-02-25T19:00:00-05:00,3,6,3,1,3,0,0,4,Final,Place Bell,"Laval, Québec",6101
+155,5,59,2025-02-26T19:00:00-05:00,5,4,5,4,4,1,0,4,Final OT,TD Place,"Ottawa, Ontario",5005
+156,5,61,2025-03-04T19:00:00-05:00,3,2,2,1,4,1,1,4,Final SO,Place Bell,"Laval, Québec",8923
+157,5,62,2025-03-05T19:00:00-05:00,1,4,5,2,3,0,0,4,Final,Tsongas Center,"Lowell, Massachusetts",3252
+158,5,63,2025-03-06T19:00:00-05:00,6,3,4,1,3,0,0,4,Final,Coca-Cola Coliseum,"Toronto, ON",8618
+159,5,66,2025-03-09T13:00:00-04:00,6,2,1,2,4,1,0,4,Final OT,Coca-Cola Coliseum,"Toronto, ON",8510
+160,5,67,2025-03-11T19:00:00-04:00,5,2,3,2,3,0,0,4,Final,TD Place,"Ottawa, Ontario",5851
+161,5,68,2025-03-12T19:00:00-04:00,4,3,3,2,4,1,0,4,Final OT,Prudential Center,"Newark, NJ",1944
+162,5,69,2025-03-15T14:00:00-04:00,5,1,2,5,3,0,0,4,Final,TD Place,"Ottawa, Ontario",8096
+163,5,71,2025-03-18T19:00:00-04:00,1,3,3,2,4,1,1,4,Final SO,Tsongas Center,"Lowell, Massachusetts",3375
+164,5,72,2025-03-19T19:00:00-04:00,6,4,2,1,3,0,0,4,Final,Coca-Cola Coliseum,"Toronto, ON",8351
+165,5,73,2025-03-22T12:00:00-04:00,4,5,2,5,3,0,0,4,Final,Prudential Center,"Newark, NJ",4767
+166,5,74,2025-03-23T12:00:00-04:00,3,6,1,2,3,0,0,4,Final,Place Bell,"Laval, Québec",10172
+167,5,75,2025-03-25T19:00:00-04:00,5,4,3,6,3,0,0,4,Final,TD Place,"Ottawa, Ontario",5707
+168,5,77,2025-03-26T19:00:00-05:00,2,3,1,4,3,0,0,4,Final,Xcel Energy Center,"Saint Paul, Minnesota",6330
+169,5,79,2025-03-30T12:00:00-05:00,2,6,5,2,3,0,0,4,Final,Xcel Energy Center,"Saint Paul, Minnesota",9536
+170,5,80,2025-04-01T19:00:00-04:00,3,4,0,1,3,0,0,4,Final,Place Bell,"Laval, Québec",8798
+171,5,81,2025-04-02T19:00:00-04:00,1,5,0,4,3,0,0,4,Final,Tsongas Center,"Lowell, Massachusetts",3807
+172,5,7,2024-12-06T19:00:00-05:00,5,3,1,2,3,0,0,4,Final,Canadian Tire Centre,"Ottawa, ON",11065
+173,5,22,2025-01-05T13:00:00-08:00,1,3,3,2,4,1,1,4,Final SO,Climate Pledge Arena,"Seattle, WA",12608
+174,5,25,2025-01-08T19:00:00-08:00,6,3,2,4,3,0,0,4,Final,Rogers Arena,"Vancouver, BC",19038
+175,5,28,2025-01-12T13:00:00-07:00,2,3,4,2,3,0,0,4,Final,Ball Arena,"Denver, CO",14018
+176,5,32,2025-01-19T13:00:00-05:00,3,5,2,1,3,0,0,4,Final,Videotron Centre,"Quebec City, QC",18259
+177,5,35,2025-01-25T14:00:00-05:00,6,4,4,2,3,0,0,4,Final,Scotiabank Arena,"Toronto, Ontario",19102
+178,5,50,2025-02-16T16:00:00-05:00,5,6,2,3,4,1,0,4,Final OT,Rogers Place,"Edmonton, AB",17518
+179,5,57,2025-02-23T16:00:00-05:00,4,1,2,3,4,1,0,4,Final SO,KeyBank Center,"Buffalo, NY",8512
+180,5,60,2025-03-01T14:00:00-05:00,3,1,3,2,4,1,0,4,Final OT,Bell Centre,"Montréal, QC",17324
+181,5,64,2025-03-07T19:00:00-05:00,2,5,5,0,3,0,0,4,Final,Lenovo Center,"Raleigh, NC",10782
+182,5,65,2025-03-08T14:00:00-05:00,1,3,2,3,4,1,0,4,Final OT,Agganis Arena,"Boston, MA",5968
+183,5,70,2025-03-16T19:30:00-04:00,4,2,4,1,3,0,0,4,Final,Little Caesars Arena,"Detroit, Michigan",14288
+184,5,76,2025-03-26T19:00:00-04:00,1,6,2,4,3,0,0,4,Final,Agganis Arena,"Boston, MA",6028
+185,5,78,2025-03-29T13:00:00-05:00,1,5,1,2,3,0,0,4,Final,Enterprise Center,"St. Louis, MO",8578
+186,5,82,2025-04-26T00:00:00-05:00,2,4,0,0,1,0,0,1,TBD,Xcel Energy Center,"Saint Paul, Minnesota",0
+187,5,83,2025-04-26T14:00:00-04:00,1,6,0,0,1,0,0,1,2:00 pm EDT,Tsongas Center,"Lowell, Massachusetts",0
+188,5,84,2025-04-26T12:00:00-04:00,5,3,0,0,1,0,0,1,12:00 pm EDT,TD Place,"Ottawa, Ontario",0
+189,5,85,2025-04-29T19:00:00-04:00,6,4,0,0,1,0,0,1,7:00 pm EDT,Coca-Cola Coliseum,"Toronto, ON",0
+190,5,86,2025-04-28T19:00:00-04:00,3,1,0,0,1,0,0,1,7:00 pm EDT,Place Bell,"Laval, Québec",0
+191,5,87,2025-04-30T19:00:00-04:00,5,2,0,0,1,0,0,1,7:00 pm EDT,TD Place,"Ottawa, Ontario",0
+192,5,88,2025-05-02T00:00:00-04:00,4,3,0,0,1,0,0,1,TBD,Prudential Center,"Newark, NJ",0
+193,5,89,2025-05-03T13:00:00-04:00,1,2,0,0,1,0,0,1,1:00 pm EDT,Tsongas Center,"Lowell, Massachusetts",0
+194,5,90,2025-05-03T12:00:00-04:00,6,5,0,0,1,0,0,1,12:00 pm EDT,Coca-Cola Coliseum,"Toronto, ON",0

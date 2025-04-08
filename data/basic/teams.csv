@@ -1,0 +1,7 @@
+id,name,nickname,code,city,logo_url,league_id,conference_id,division_id
+1,Boston Fleet,Fleet,BOS,Boston,https://assets.leaguestat.com/pwhl/logos/1_5.png,1,1,1
+2,Minnesota Frost,Frost,MIN,Minnesota,https://assets.leaguestat.com/pwhl/logos/2_5.png,1,1,1
+3,Montréal Victoire,Victoire,MTL,Montréal,https://assets.leaguestat.com/pwhl/logos/3_5.png,1,1,1
+4,New York Sirens,Sirens,NY,New York,https://assets.leaguestat.com/pwhl/logos/4_5.png,1,1,1
+5,Ottawa Charge,Charge,OTT,Ottawa,https://assets.leaguestat.com/pwhl/logos/5_5.png,1,1,1
+6,Toronto Sceptres,Sceptres,TOR,Toronto,https://assets.leaguestat.com/pwhl/logos/6_5.png,1,1,1
